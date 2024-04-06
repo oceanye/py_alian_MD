@@ -31,7 +31,7 @@ def draw_circle(event, x, y, flags, param):
 
 
 # 读取视频
-cap = cv2.VideoCapture('Video_20240311134546312.avi')
+cap = cv2.VideoCapture('Video_20240311134300390.avi')
 
 # 读取第一帧
 ret, img = cap.read()
@@ -73,18 +73,18 @@ while (cap.isOpened()):
 
         # 应用 Canny 边缘检测
 
-        median_val1 = np.median(gray_roi_1)  # 计算图像中位数
+        #median_val1 = np.median(gray_roi_1)  # 计算图像中位数
 
         # 设置高低阈值
-        lower_threshold1 = int(max(0, (1.0 - 0.33) * median_val1))
-        upper_threshold1 = int(min(255, (1.0 + 0.33) * median_val1))
+        lower_threshold1 = 200#int(max(0, (1.0 - 0.33) * median_val1))
+        upper_threshold1 = 255#int(min(255, (1.0 + 0.33) * median_val1))
 
 
         median_val2 = np.median(gray_roi_2)  # 计算图像中位数
 
         # 设置高低阈值
-        lower_threshold2 = int(max(0, (1.0 - 0.33) * median_val2))
-        upper_threshold2 = int(min(255, (1.0 + 0.33) * median_val2))
+        lower_threshold2 = 200#int(max(0, (1.0 - 0.33) * median_val2))
+        upper_threshold2 = 255#int(min(255, (1.0 + 0.33) * median_val2))
 
 
         edges_1 = cv2.Canny(gray_roi_1, lower_threshold1, upper_threshold1)
