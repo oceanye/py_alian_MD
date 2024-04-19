@@ -1,7 +1,8 @@
 import random
-
 import cv2
 import numpy as np
+
+#2024.04.19 提交
 
 # 全局变量
 drawing = False  # 真如果鼠标被按下
