@@ -101,18 +101,11 @@ def get_frame(cam):
 
         nRet = cam.MV_CC_FreeImageBuffer(stOutFrame)
 
-        # 根据图像格式将缓冲区数据转换为RGB格式
-        if stOutFrame.stFrameInfo.enPixelType == 17301505:  # Mono8
+        # Convert the image from YUV422 to BGR format
+        if stOutFrame.stFrameInfo.enPixelType == 17301513:  # YUV422_Packed
             img = np.frombuffer(data, dtype=np.uint8)
-            img = img.reshape((stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nWidth))
-            img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
-        elif stOutFrame.stFrameInfo.enPixelType == 17301514:  # RGB8
-            img = np.frombuffer(data, dtype=np.uint8)
-            img = img.reshape((stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nWidth, 3))
-            img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-        elif stOutFrame.stFrameInfo.enPixelType == 35127316:  # BGR8
-            img = np.frombuffer(data, dtype=np.uint8)
-            img = img.reshape((stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nWidth, 3))
+            img = img.reshape((stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nWidth, 2))
+            img = cv2.cvtColor(img, cv2.COLOR_YUV2BGR_YUYV)
         else:
             print("unsupported pixel type: %d" % stOutFrame.stFrameInfo.enPixelType)
             return None
