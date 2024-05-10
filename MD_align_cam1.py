@@ -99,9 +99,11 @@ cap_source = "camera"  # "camera" or "video"
 
 if cap_source == "camera":
     cam = camera_utils.open_camera()
-    data, width, height = camera_utils.get_frame(cam)
-    img = np.frombuffer(data, dtype=np.uint8)
-    img = img.reshape((height, width, 1))
+    #data, width, height = camera_utils.get_frame(cam)
+    #img = np.frombuffer(data, dtype=np.uint8)
+    #img = img.reshape((height, width, 1))
+
+    img = camera_utils.get_frame(cam)
 
 else:
     # 读取视频
@@ -135,9 +137,10 @@ frame_count = 0
 line_count =0
 while (cap.isOpened() or (cam is not None)):
     if cap_source == "camera":
-        data, width, height = camera_utils.get_frame(cam)
-        img = np.frombuffer(data, dtype=np.uint8)
-        frame = img.reshape((height, width, 1))
+        #data, width, height = camera_utils.get_frame(cam)
+        #img = np.frombuffer(data, dtype=np.uint8)
+        #frame = img.reshape((height, width, 1))
+        frame = camera_utils.get_frame(cam)
         ret = True
     else:
         ret, frame = cap.read()

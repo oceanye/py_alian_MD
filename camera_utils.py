@@ -2,6 +2,8 @@
 
 import sys
 from ctypes import *
+import cv2
+import numpy as np
 
 sys.path.append("../MvImport")
 from MvCameraControl_class import *
@@ -65,7 +67,7 @@ def close_camera(cam):
         sys.exit()
 
 
-def get_frame(cam):
+def get_frame_black(cam):
     stOutFrame = MV_FRAME_OUT()
     memset(byref(stOutFrame), 0, sizeof(stOutFrame))
 
@@ -83,3 +85,39 @@ def get_frame(cam):
     else:
         print("no data[0x%x]" % ret)
         return None, None, None
+
+
+def get_frame(cam):
+    stOutFrame = MV_FRAME_OUT()
+    memset(byref(stOutFrame), 0, sizeof(stOutFrame))
+
+    ret = cam.MV_CC_GetImageBuffer(stOutFrame, 1000)
+    if None != stOutFrame.pBufAddr and 0 == ret:
+        print("get one frame: Width[%d], Height[%d], nFrameNum[%d]" % (
+        stOutFrame.stFrameInfo.nWidth, stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nFrameNum))
+
+        data = (c_ubyte * stOutFrame.stFrameInfo.nFrameLen)()
+        cdll.msvcrt.memcpy(byref(data), stOutFrame.pBufAddr, stOutFrame.stFrameInfo.nFrameLen)
+
+        nRet = cam.MV_CC_FreeImageBuffer(stOutFrame)
+
+        # 根据图像格式将缓冲区数据转换为RGB格式
+        if stOutFrame.stFrameInfo.enPixelType == 17301505:  # Mono8
+            img = np.frombuffer(data, dtype=np.uint8)
+            img = img.reshape((stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nWidth))
+            img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+        elif stOutFrame.stFrameInfo.enPixelType == 17301514:  # RGB8
+            img = np.frombuffer(data, dtype=np.uint8)
+            img = img.reshape((stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nWidth, 3))
+            img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+        elif stOutFrame.stFrameInfo.enPixelType == 35127316:  # BGR8
+            img = np.frombuffer(data, dtype=np.uint8)
+            img = img.reshape((stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nWidth, 3))
+        else:
+            print("unsupported pixel type: %d" % stOutFrame.stFrameInfo.enPixelType)
+            return None
+
+        return img
+    else:
+        print("no data[0x%x]" % ret)
+        return None
