@@ -1,7 +1,7 @@
 # -- coding: utf-8 --
 
 import sys
-import threading
+import copy
 import msvcrt
 
 from ctypes import *
@@ -9,31 +9,18 @@ from ctypes import *
 sys.path.append("../MvImport")
 from MvCameraControl_class import *
 
-g_bExit = False
+winfun_ctype = WINFUNCTYPE
 
-# 为线程定义一个函数
-def work_thread(cam=0, pData=0, nDataSize=0):
-    stOutFrame = MV_FRAME_OUT()  
-    memset(byref(stOutFrame), 0, sizeof(stOutFrame))
+stFrameInfo = POINTER(MV_FRAME_OUT_INFO_EX)
+pData = POINTER(c_ubyte)
+FrameInfoCallBack = winfun_ctype(None, pData, stFrameInfo, c_void_p)
 
-    stInputFrameInfo = MV_CC_INPUT_FRAME_INFO()
-    memset(byref(stInputFrameInfo), 0 ,sizeof(MV_CC_INPUT_FRAME_INFO))
-    while True:
-        ret = cam.MV_CC_GetImageBuffer(stOutFrame, 1000)
-        if None != stOutFrame.pBufAddr and 0 == ret:
-            print ("get one frame: Width[%d], Height[%d], nFrameNum[%d]"  % (stOutFrame.stFrameInfo.nWidth, stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nFrameNum))
-            stInputFrameInfo.pData = cast(stOutFrame.pBufAddr, POINTER(c_ubyte))
-            stInputFrameInfo.nDataLen = stOutFrame.stFrameInfo.nFrameLen
-            # ch:输入一帧数据到录像接口 | en:Input a frame of data to the video interface
-            ret = cam.MV_CC_InputOneFrame(stInputFrameInfo)
-            #ret
-            if ret != 0:
-                print ("input one frame fail! nRet [0x%x]" % ret)
-            nRet = cam.MV_CC_FreeImageBuffer(stOutFrame)
-        else:
-            print ("no data[0x%x]" % ret)
-        if g_bExit == True:
-                break
+def image_callback(pData, pFrameInfo, pUser):
+        stFrameInfo = cast(pFrameInfo, POINTER(MV_FRAME_OUT_INFO_EX)).contents
+        if stFrameInfo:
+            print ("get one frame: Width[%d], Height[%d], nFrameNum[%d]" % (stFrameInfo.nWidth, stFrameInfo.nHeight, stFrameInfo.nFrameNum))
+
+CALL_BACK_FUN = FrameInfoCallBack(image_callback)
 
 if __name__ == "__main__":
 
@@ -45,12 +32,12 @@ if __name__ == "__main__":
     if ret != 0:
         print ("enum devices fail! ret[0x%x]" % ret)
         sys.exit()
-
+    
     if deviceList.nDeviceNum == 0:
         print ("find no device!")
         sys.exit()
 
-    print ("Find %d devices!" % deviceList.nDeviceNum)
+    print ("find %d devices!" % deviceList.nDeviceNum)
 
     for i in range(0, deviceList.nDeviceNum):
         mvcc_dev_info = cast(deviceList.pDeviceInfo[i], POINTER(MV_CC_DEVICE_INFO)).contents
@@ -89,10 +76,10 @@ if __name__ == "__main__":
     if int(nConnectionNum) >= deviceList.nDeviceNum:
         print ("intput error!")
         sys.exit()
-
+    
     # ch:创建相机实例 | en:Creat Camera Object
     cam = MvCamera()
-    
+
     # ch:选择设备并创建句柄 | en:Select device and create handle
     stDeviceList = cast(deviceList.pDeviceInfo[int(nConnectionNum)], POINTER(MV_CC_DEVICE_INFO)).contents
 
@@ -117,62 +104,16 @@ if __name__ == "__main__":
         else:
             print ("Warning: Get Packet Size fail! ret[0x%x]" % nPacketSize)
 
-    stBool = c_bool(False)
-    ret =cam.MV_CC_GetBoolValue("AcquisitionFrameRateEnable", stBool)
-    if ret != 0:
-        print ("get AcquisitionFrameRateEnable fail! ret[0x%x]" % ret)
-
     # ch:设置触发模式为off | en:Set trigger mode as off
     ret = cam.MV_CC_SetEnumValue("TriggerMode", MV_TRIGGER_MODE_OFF)
     if ret != 0:
         print ("set trigger mode fail! ret[0x%x]" % ret)
         sys.exit()
 
-    stParam =  MVCC_INTVALUE()
-    memset(byref(stParam), 0, sizeof(MVCC_INTVALUE))
-    stRecordPar = MV_CC_RECORD_PARAM()
-    memset(byref(stRecordPar), 0, sizeof(MV_CC_RECORD_PARAM))
-    # ch:获取图像高度 | en:Get the width of the image
-    ret = cam.MV_CC_GetIntValue("Width", stParam)
-    if ret != 0: 
-        print ("get width fail! nRet [0x%x]" % ret)
-        sys.exit()
-    stRecordPar.nWidth = stParam.nCurValue
-
-    # ch:获取图像高度 | en:Get the height of the image
-    ret = cam.MV_CC_GetIntValue("Height", stParam)
-    if ret != 0: 
-        print ("get height fail! nRet [0x%x]"% ret)
-        sys.exit()
-    stRecordPar.nHeight = stParam.nCurValue
-
-    # ch:获取图像像素 | en:Get the pixelFormat of the image
-    stEnumValue = MVCC_ENUMVALUE()
-    memset(byref(stEnumValue), 0 ,sizeof(MVCC_ENUMVALUE))
-    ret = cam.MV_CC_GetEnumValue("PixelFormat", stEnumValue)
-    if ret != 0: 
-        print ("get PixelFormat fail! nRet [0x%x]" % ret)
-        sys.exit()
-    stRecordPar.enPixelType = MvGvspPixelType(stEnumValue.nCurValue)
-
-    # ch:获取图像帧率 | en:Get the resultingFrameRate of the image
-    stFloatValue = MVCC_FLOATVALUE()
-    memset(byref(stFloatValue), 0 ,sizeof(MVCC_FLOATVALUE))
-    ret = cam.MV_CC_GetFloatValue("ResultingFrameRate", stFloatValue)
-    if ret != 0: 
-        print ("get ResultingFrameRate value fail! nRet [0x%x]" % ret)
-        sys.exit()
-    stRecordPar.fFrameRate = stFloatValue.fCurValue
-
-    # ch:录像结构体赋值 | en:Video structure assignment
-    stRecordPar.nBitRate = 1000
-    stRecordPar.enRecordFmtType = MV_FormatType_AVI
-    stRecordPar.strFilePath= 'Recording.avi'.encode('ascii')
-
-    # ch:开始录像 | en:Start Recording
-    nRet = cam.MV_CC_StartRecord(stRecordPar)
-    if ret != 0: 
-        print ("Start Record fail! nRet [0x%x]\n", nRet)
+    # ch:注册抓图回调 | en:Register image callback
+    ret = cam.MV_CC_RegisterImageCallBackEx(CALL_BACK_FUN,None)
+    if ret != 0:
+        print ("register image callback fail! ret[0x%x]" % ret)
         sys.exit()
 
     # ch:开始取流 | en:Start grab image
@@ -181,28 +122,13 @@ if __name__ == "__main__":
         print ("start grabbing fail! ret[0x%x]" % ret)
         sys.exit()
 
-    try:
-        hThreadHandle = threading.Thread(target=work_thread, args=(cam, None, None))
-        hThreadHandle.start()
-    except:
-        print ("error: unable to start thread")
-        
     print ("press a key to stop grabbing.")
     msvcrt.getch()
-
-    g_bExit = True
-    hThreadHandle.join()
 
     # ch:停止取流 | en:Stop grab image
     ret = cam.MV_CC_StopGrabbing()
     if ret != 0:
         print ("stop grabbing fail! ret[0x%x]" % ret)
-        sys.exit()
-
-    # ch:停止录像 | en:Stop recording
-    ret = cam.MV_CC_StopRecord()
-    if ret != 0:
-        print ("stop Record fail! ret[0x%x]" % ret)
         sys.exit()
 
     # ch:关闭设备 | Close device
@@ -216,4 +142,3 @@ if __name__ == "__main__":
     if ret != 0:
         print ("destroy handle fail! ret[0x%x]" % ret)
         sys.exit()
-

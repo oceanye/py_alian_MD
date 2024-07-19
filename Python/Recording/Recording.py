@@ -26,7 +26,6 @@ def work_thread(cam=0, pData=0, nDataSize=0):
             stInputFrameInfo.nDataLen = stOutFrame.stFrameInfo.nFrameLen
             # ch:输入一帧数据到录像接口 | en:Input a frame of data to the video interface
             ret = cam.MV_CC_InputOneFrame(stInputFrameInfo)
-            #ret
             if ret != 0:
                 print ("input one frame fail! nRet [0x%x]" % ret)
             nRet = cam.MV_CC_FreeImageBuffer(stOutFrame)

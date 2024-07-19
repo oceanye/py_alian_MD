@@ -1,4 +1,4 @@
-# main.py
+import time
 
 import cv2
 import numpy as np
@@ -7,25 +7,25 @@ import msvcrt
 import camera_utils
 from MvCameraControl_class import MvCamera
 
-
-
 if __name__ == "__main__":
-    #cam = camera_utils.open_camera()
     cam = camera_utils.open_camera()
 
     while True:
-        data, width, height = camera_utils.get_frame(cam)
+        current_time = time.time()
+        formatted_time = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(current_time))
 
-        if data is not None:
+        print(formatted_time)
 
-            img=cam.MV_CC_StartGrabbing()
+        img = camera_utils.get_frame(cam)
 
+        if img is not None:
             cv2.imshow("Image", img)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-
-        if msvcrt.kbhit():
+        else:
+            print("img None")
+        key = cv2.waitKey(1)
+        if key == ord('q'):
             break
 
-    camera_utils.close_camera(cam)
     cv2.destroyAllWindows()
+    cam.MV_CC_CloseDevice()
+    cam.MV_CC_DestroyHandle()

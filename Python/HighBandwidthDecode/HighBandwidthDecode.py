@@ -11,30 +11,6 @@ from MvCameraControl_class import *
 
 g_bExit = False
 
-# 为线程定义一个函数
-def work_thread(cam=0, pData=0, nDataSize=0):
-    stOutFrame = MV_FRAME_OUT()  
-    memset(byref(stOutFrame), 0, sizeof(stOutFrame))
-
-    stInputFrameInfo = MV_CC_INPUT_FRAME_INFO()
-    memset(byref(stInputFrameInfo), 0 ,sizeof(MV_CC_INPUT_FRAME_INFO))
-    while True:
-        ret = cam.MV_CC_GetImageBuffer(stOutFrame, 1000)
-        if None != stOutFrame.pBufAddr and 0 == ret:
-            print ("get one frame: Width[%d], Height[%d], nFrameNum[%d]"  % (stOutFrame.stFrameInfo.nWidth, stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nFrameNum))
-            stInputFrameInfo.pData = cast(stOutFrame.pBufAddr, POINTER(c_ubyte))
-            stInputFrameInfo.nDataLen = stOutFrame.stFrameInfo.nFrameLen
-            # ch:输入一帧数据到录像接口 | en:Input a frame of data to the video interface
-            ret = cam.MV_CC_InputOneFrame(stInputFrameInfo)
-            #ret
-            if ret != 0:
-                print ("input one frame fail! nRet [0x%x]" % ret)
-            nRet = cam.MV_CC_FreeImageBuffer(stOutFrame)
-        else:
-            print ("no data[0x%x]" % ret)
-        if g_bExit == True:
-                break
-
 if __name__ == "__main__":
 
     deviceList = MV_CC_DEVICE_INFO_LIST()
@@ -128,52 +104,15 @@ if __name__ == "__main__":
         print ("set trigger mode fail! ret[0x%x]" % ret)
         sys.exit()
 
-    stParam =  MVCC_INTVALUE()
-    memset(byref(stParam), 0, sizeof(MVCC_INTVALUE))
-    stRecordPar = MV_CC_RECORD_PARAM()
-    memset(byref(stRecordPar), 0, sizeof(MV_CC_RECORD_PARAM))
-    # ch:获取图像高度 | en:Get the width of the image
-    ret = cam.MV_CC_GetIntValue("Width", stParam)
-    if ret != 0: 
-        print ("get width fail! nRet [0x%x]" % ret)
+    # 获取数据包大小
+    stParam = MVCC_INTVALUE()
+    memset(byref(stParam), 0, sizeof(stParam))
+    ret = cam.MV_CC_GetIntValue("PayloadSize",stParam)
+    if 0 != ret:
+        print("Get PayloadSize fail! ret[0x%x]" % ret)
         sys.exit()
-    stRecordPar.nWidth = stParam.nCurValue
 
-    # ch:获取图像高度 | en:Get the height of the image
-    ret = cam.MV_CC_GetIntValue("Height", stParam)
-    if ret != 0: 
-        print ("get height fail! nRet [0x%x]"% ret)
-        sys.exit()
-    stRecordPar.nHeight = stParam.nCurValue
-
-    # ch:获取图像像素 | en:Get the pixelFormat of the image
-    stEnumValue = MVCC_ENUMVALUE()
-    memset(byref(stEnumValue), 0 ,sizeof(MVCC_ENUMVALUE))
-    ret = cam.MV_CC_GetEnumValue("PixelFormat", stEnumValue)
-    if ret != 0: 
-        print ("get PixelFormat fail! nRet [0x%x]" % ret)
-        sys.exit()
-    stRecordPar.enPixelType = MvGvspPixelType(stEnumValue.nCurValue)
-
-    # ch:获取图像帧率 | en:Get the resultingFrameRate of the image
-    stFloatValue = MVCC_FLOATVALUE()
-    memset(byref(stFloatValue), 0 ,sizeof(MVCC_FLOATVALUE))
-    ret = cam.MV_CC_GetFloatValue("ResultingFrameRate", stFloatValue)
-    if ret != 0: 
-        print ("get ResultingFrameRate value fail! nRet [0x%x]" % ret)
-        sys.exit()
-    stRecordPar.fFrameRate = stFloatValue.fCurValue
-
-    # ch:录像结构体赋值 | en:Video structure assignment
-    stRecordPar.nBitRate = 1000
-    stRecordPar.enRecordFmtType = MV_FormatType_AVI
-    stRecordPar.strFilePath= 'Recording.avi'.encode('ascii')
-
-    # ch:开始录像 | en:Start Recording
-    nRet = cam.MV_CC_StartRecord(stRecordPar)
-    if ret != 0: 
-        print ("Start Record fail! nRet [0x%x]\n", nRet)
-        sys.exit()
+    nPayloadSize = stParam.nCurValue
 
     # ch:开始取流 | en:Start grab image
     ret = cam.MV_CC_StartGrabbing()
@@ -181,28 +120,52 @@ if __name__ == "__main__":
         print ("start grabbing fail! ret[0x%x]" % ret)
         sys.exit()
 
-    try:
-        hThreadHandle = threading.Thread(target=work_thread, args=(cam, None, None))
-        hThreadHandle.start()
-    except:
-        print ("error: unable to start thread")
-        
-    print ("press a key to stop grabbing.")
-    msvcrt.getch()
+    nImageNum=10
+    stOutFrame = MV_FRAME_OUT()
+    stDecodeParam = MV_CC_HB_DECODE_PARAM()
+    memset(byref(stOutFrame), 0, sizeof(stOutFrame))
+    for i in range(0,nImageNum):
+        ret = cam.MV_CC_GetImageBuffer(stOutFrame, 1000)
+        if None != stOutFrame.pBufAddr and 0 == ret:
+            print("get one frame: Width[%d], Height[%d], nFrameNum[%d]" % (
+            stOutFrame.stFrameInfo.nWidth, stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nFrameNum))
 
-    g_bExit = True
-    hThreadHandle.join()
+            stDecodeParam.pSrcBuf = stOutFrame.pBufAddr
+            stDecodeParam.nSrcLen = stOutFrame.stFrameInfo.nFrameLen
+            stDecodeParam.pDstBuf = (c_ubyte * nPayloadSize)()
+            stDecodeParam.nDstBufSize = nPayloadSize
+            ret = cam.MV_CC_HBDecode(stDecodeParam)
+            if ret != 0:
+                print("HB Decode fail! ret[0x%x]" % ret)
+                cam.MV_CC_FreeImageBuffer(stOutFrame)
+                break
+            else:
+                print("Decode succeed!")
+
+            nRet = cam.MV_CC_FreeImageBuffer(stOutFrame)
+
+            file_path = "Image_w%d_h%d_fn%d.raw" %(stOutFrame.stFrameInfo.nWidth,stOutFrame.stFrameInfo.nHeight, stOutFrame.stFrameInfo.nFrameNum)
+            file_open = open(file_path.encode('ascii'),'wb+')
+            try:
+                error_save = (c_ubyte * stDecodeParam.nDstBufLen)()
+                memmove(byref(error_save),stDecodeParam.pDstBuf,stDecodeParam.nDstBufLen)
+                file_open.write(error_save)
+            except:
+                raise Exception("save error raw file executed failed!")
+            finally:
+                file_open.close()
+        else:
+            print("no data[0x%x]" % ret)
+        if g_bExit == True:
+            break
+        
+    print ("press a key to exit.")
+    msvcrt.getch()
 
     # ch:停止取流 | en:Stop grab image
     ret = cam.MV_CC_StopGrabbing()
     if ret != 0:
         print ("stop grabbing fail! ret[0x%x]" % ret)
-        sys.exit()
-
-    # ch:停止录像 | en:Stop recording
-    ret = cam.MV_CC_StopRecord()
-    if ret != 0:
-        print ("stop Record fail! ret[0x%x]" % ret)
         sys.exit()
 
     # ch:关闭设备 | Close device
@@ -216,4 +179,3 @@ if __name__ == "__main__":
     if ret != 0:
         print ("destroy handle fail! ret[0x%x]" % ret)
         sys.exit()
-

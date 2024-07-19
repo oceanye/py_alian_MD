@@ -114,7 +114,7 @@ else:
     #img 缩小到50%
 
 
-img = cv2.resize(img, (0, 0), fx=0.5, fy=0.5)
+img = cv2.resize(img, (0, 0), fx=0.3, fy=0.3)
 
 cv2.namedWindow('image')
 cv2.setMouseCallback('image', draw_circle)
@@ -146,7 +146,10 @@ while ( 1):
 
 
             frame = camera_utils.get_frame(cam)
-            ret = True
+            #20240702手动修改曝光
+            #cam.MV_CC_SetEnumValue("ExposureAuto", 0)
+            #print("rate:",cam.frame_rate,"exp:",cam.exposure_time)
+            ret =True#cam.Set_parameter(cam.frame_rate,cam.exposure_time,cam.gain)
         else:
             #ret, frame = cap.read()
             print("camera fail")
@@ -156,7 +159,7 @@ while ( 1):
             continue
 
         frame2 = frame.__deepcopy__(frame)
-        frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
+        frame = cv2.resize(frame, (0, 0), fx=0.3, fy=0.3)
 
         #建立一个循环计数，每24次循环清空frame_count
         frame_count = frame_count + 1
