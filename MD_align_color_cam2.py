@@ -111,6 +111,7 @@ def create_gui():
 
     root.mainloop()
 
+
 def draw_histogram(history, frame):
     """在视频帧上绘制颜色区域计数的历史记录直方图"""
     hist_height = 100
@@ -122,13 +123,72 @@ def draw_histogram(history, frame):
 
     max_val = max(history) if history else 1
 
+    # 添加这个检查
+    if max_val == 0:
+        max_val = 1  # 避免除以零
+
     for i, val in enumerate(history):
-        cv2.line(hist, (i, hist_height), (i, hist_height - int(hist_height * val / max_val)), (255, 0, 0), 1)
+        height = int(hist_height * val / max_val)
+        cv2.line(hist, (i, hist_height), (i, hist_height - height), (0, 255, 0), 1)
 
-    x_offset = frame.shape[1] - hist_width - 10
-    y_offset = 10
-    frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width] = hist
+    # 添加背景和边框
+    cv2.rectangle(hist, (0, 0), (hist_width - 1, hist_height - 1), (255, 255, 255), 1)
 
+    # 在直方图上添加标签
+    cv2.putText(hist, "Color Regions History", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+
+    # 计算直方图在帧中的位置
+    x_offset = 100#frame.shape[1] - hist_width - 10
+    y_offset = 50
+
+    # 使用 addWeighted 来叠加直方图到原始帧上
+    roi = frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width]
+    dst = cv2.addWeighted(roi, 1, hist, 0.7, 0)
+    frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width] = dst
+
+
+def create_side_by_side_display(frame1, frame2, window_name='Side by Side Display', scale_factor=0.5):
+    # 检查输入帧是否为空
+    if frame1 is None or frame2 is None:
+        print("Error: One or both input frames are None")
+        return None
+
+    # 打印帧的形状和类型，用于调试
+    print(f"Frame1 shape: {frame1.shape}, dtype: {frame1.dtype}")
+    print(f"Frame2 shape: {frame2.shape}, dtype: {frame2.dtype}")
+
+    # 确保两个帧的高度相同
+    h1, w1 = frame1.shape[:2]
+    h2, w2 = frame2.shape[:2]
+    h = min(h1, h2)
+
+    try:
+        # 调整帧的大小以匹配高度
+        frame1_resized = cv2.resize(frame1, (int(w1 * h / h1), h))
+        frame2_resized = cv2.resize(frame2, (int(w2 * h / h2), h))
+
+        print(f"Resized frame1 shape: {frame1_resized.shape}")
+        print(f"Resized frame2 shape: {frame2_resized.shape}")
+
+        # 水平连接两个帧
+        combined_frame = np.hstack((frame1_resized, frame2_resized))
+
+        print(f"Combined frame shape: {combined_frame.shape}")
+
+        # 缩放combined_frame
+        combined_frame_scaled = cv2.resize(combined_frame, None, fx=scale_factor, fy=scale_factor)
+
+        print(f"Scaled combined frame shape: {combined_frame_scaled.shape}")
+
+        # 显示结果
+        cv2.imshow(window_name, combined_frame_scaled)
+
+        return combined_frame_scaled
+    except Exception as e:
+        print(f"Error in create_side_by_side_display: {e}")
+        import traceback
+        traceback.print_exc()
+        return None
 def main():
     """主函数，处理视频并应用颜色过滤和标记"""
     global frame, zoom_img, avg_color_img, colors, avg_color, is_picking_color
@@ -184,6 +244,8 @@ def main():
         #    video.set(cv2.CAP_PROP_POS_FRAMES, 0)  # 重置视频到开始
         #    continue
         frame = camera_utils.get_frame(camera)
+        frame = cv2.resize(frame, (0, 0), fx=1.0, fy=1.0)
+
         if frame is None:
             print("无法获取帧")
             continue
@@ -216,8 +278,18 @@ def main():
         filtered_frame = cv2.bitwise_and(frame, frame, mask=new_mask)
 
         # 计算识别到的颜色区域个数
+        # 在主循环中，绘制直方图之前更新 color_regions_history
+        color_regions_history = []  # 添加这行
+
         color_regions_count = len([c for c in contours if area_min <= cv2.contourArea(c) <= area_max])
-        color_regions_history.append(color_regions_count)  # 添加到历史记录
+        color_regions_history.append(color_regions_count)
+
+        # 限制 history 的大小以防止内存问题
+        if len(color_regions_history) > 300:  # 假设我们只保留最近300帧的历史
+            color_regions_history = color_regions_history[-300:]
+
+        # 在视频帧上绘制历史记录直方图
+        draw_histogram(color_regions_history, frame)
 
         centers = []
         for contour in contours:
@@ -257,12 +329,36 @@ def main():
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
         # 在视频帧上绘制历史记录直方图
-        draw_histogram(color_regions_history, frame)
+        #draw_histogram(color_regions_history, frame)
+
+
 
         # 显示结果
-        cv2.imshow('Original Video', frame)
-        cv2.imshow('Filtered Video', filtered_frame)
+        #cv2.imshow('Original Video', frame)
+        #cv2.imshow('Filtered Video', filtered_frame)
 
+        # 创建并显示并排视图
+        print(f"Original frame shape: {frame.shape}, dtype: {frame.dtype}")
+        print(f"Filtered frame shape: {filtered_frame.shape}, dtype: {filtered_frame.dtype}")
+        print(f"Filtered frame min: {np.min(filtered_frame)}, max: {np.max(filtered_frame)}")
+
+        # 尝试归一化 filtered_frame
+        if filtered_frame.dtype != np.uint8:
+            filtered_frame = cv2.normalize(filtered_frame, None, 0, 255, cv2.NORM_MINMAX)
+            filtered_frame = filtered_frame.astype(np.uint8)
+
+        if len(filtered_frame.shape) == 2:
+            filtered_frame = cv2.cvtColor(filtered_frame, cv2.COLOR_GRAY2BGR)
+
+        # 单独显示 filtered_frame 进行检查
+        cv2.imshow('Filtered Frame', filtered_frame)
+
+        # 创建并显示并排视图
+        combined_frame = create_side_by_side_display(frame, filtered_frame, 'Original and Filtered Video',
+                                                     scale_factor=0.7)
+
+        if combined_frame is None:
+            print("Failed to create side-by-side display")
         # 按 'q' 键退出
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
