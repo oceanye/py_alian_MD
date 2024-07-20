@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import tkinter as tk
 import threading
+import camera_utils
 
 # 全局变量
 colors = []
@@ -13,6 +14,7 @@ is_picking_color = False
 is_camera_open = False
 frame = None
 video_source = None
+zoom_img = None
 
 # 全局变量用于滑块和复选框
 area_min = 50
@@ -23,32 +25,37 @@ use_x_coord = False
 dilation_size = 5
 color_regions_history = []
 
-def zoom_effect(event, x, y, flags, param):
-    global colors, frame, zoom_img, avg_color_img
+def mouse_callback(event, x, y, flags, param):
+    global frame, zoom_img
+    if frame is not None:
+        zoom_img = zoom_effect(frame, x, y, zoom_factor, zoom_size)
 
-    if event == cv2.EVENT_MOUSEMOVE:
-        if frame is not None:
-            zoom_img = frame.copy()
-            h, w = frame.shape[:2]
+def zoom_effect(frame, x, y, zoom_factor=2, zoom_size=150):
+    h, w = frame.shape[:2]
 
-            x_start = max(0, x - zoom_size // (2 * zoom_factor))
-            x_end = min(w, x + zoom_size // (2 * zoom_factor))
-            y_start = max(0, y - zoom_size // (2 * zoom_factor))
-            y_end = min(h, y + zoom_size // (2 * zoom_factor))
+    # Ensure x and y are within the frame
+    x = max(zoom_size // 2, min(x, w - zoom_size // 2))
+    y = max(zoom_size // 2, min(y, h - zoom_size // 2))
 
-            zoom_area = frame[y_start:y_end, x_start:x_end]
-            zoomed = cv2.resize(zoom_area, (zoom_size, zoom_size), interpolation=cv2.INTER_LINEAR)
+    # Extract the region to zoom
+    small_img = frame[y - zoom_size // 2:y + zoom_size // 2,
+                      x - zoom_size // 2:x + zoom_size // 2]
 
-            cv2.rectangle(zoom_img, (x - zoom_size // 2, y - zoom_size // 2),
-                          (x + zoom_size // 2, y + zoom_size // 2), (0, 255, 0), 2)
-            zoom_img[y - zoom_size // 2:y + zoom_size // 2, x - zoom_size // 2:x + zoom_size // 2] = zoomed
+    # Zoom the extracted region
+    zoomed = cv2.resize(small_img, None, fx=zoom_factor, fy=zoom_factor)
 
-    elif event == cv2.EVENT_LBUTTONDOWN:
-        if frame is not None:
-            color = frame[y, x]
-            colors.append(color)
-            print(f"选中的颜色: {color}")
-            update_avg_color()
+    # Crop the zoomed image to match zoom_size
+    zoomed = zoomed[zoomed.shape[0] // 2 - zoom_size // 2:zoomed.shape[0] // 2 + zoom_size // 2,
+                    zoomed.shape[1] // 2 - zoom_size // 2:zoomed.shape[1] // 2 + zoom_size // 2]
+
+    # Create a copy of the frame to modify
+    zoom_img = frame.copy()
+
+    # Place the zoomed image back into the frame
+    zoom_img[y - zoom_size // 2:y + zoom_size // 2,
+             x - zoom_size // 2:x + zoom_size // 2] = zoomed
+
+    return zoom_img
 
 def update_avg_color():
     global avg_color_img, colors, avg_color, frame
@@ -79,11 +86,12 @@ def reselect_colors_callback():
 def open_camera_callback():
     global is_camera_open, video_source
     if not is_camera_open:
-        video_source = cv2.VideoCapture(0)
-        is_camera_open = True
-        print("摄像头已打开")
-    else:
-        print("摄像头已经打开")
+        video_source = camera_utils.open_camera()
+        if video_source is not None:
+            is_camera_open = True
+            print("摄像头已打开")
+        else:
+            print("无法打开摄像头")
 
 def create_gui():
     global area_min_var, area_max_var, color_tolerance_var, coord_threshold_var, use_x_coord_var, dilation_size_var
@@ -144,22 +152,23 @@ def main():
     gui_thread.start()
 
     cv2.namedWindow('Video')
-    cv2.setMouseCallback('Video', zoom_effect)
+    cv2.setMouseCallback('Video', mouse_callback)
 
     while True:
         if is_camera_open and video_source is not None:
-            ret, frame = video_source.read()
-            if not ret:
-                print("无法读取摄像头")
+            frame = camera_utils.get_frame(video_source)
+            if frame is None:
+                print("无法从摄像头获取帧")
                 break
         else:
             frame = np.zeros((480, 640, 3), dtype=np.uint8)
             cv2.putText(frame, "请打开摄像头", (200, 240), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
-        if is_picking_color:
+        if zoom_img is None:
             zoom_img = frame.copy()
-            update_avg_color()
 
+        if is_picking_color:
+            update_avg_color()
             display_img = np.hstack((zoom_img, avg_color_img))
             cv2.imshow('Video', display_img)
             key = cv2.waitKey(1) & 0xFF
@@ -233,13 +242,13 @@ def main():
                 cv2.imshow('Video', frame)
                 cv2.imshow('Filtered Video', filtered_frame)
             else:
-                cv2.imshow('Video', frame)
+                cv2.imshow('Video', zoom_img)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
     if video_source is not None:
-        video_source.release()
+        camera_utils.close_camera(video_source)
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
