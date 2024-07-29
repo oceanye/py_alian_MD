@@ -14,7 +14,7 @@ zoom_size = 150
 avg_color_block_size = 100  # 平均颜色块的大小
 avg_color = None
 is_picking_color = True  # 标识是否在拾取颜色状态
-
+is_draw_cut_line= False # 表示是否在绘制切割标记线
 
 # 新增全局变量
 picker_dist = 0
@@ -38,6 +38,7 @@ color_regions_history = []
 click_count = 0
 first_click_pos = None
 second_click_pos = None
+cut_points = [None,None]
 
 dist_offset = 50
 mask_roi = []
@@ -109,7 +110,12 @@ def refresh_parameters():
     dilation_size = 2 * dilation_size_var.get() + 3
     dist_offset = dist_offset_var.get()
 
-
+def recut_line_callback():
+    """重新拾取颜色的回调函数"""
+    global is_draw_cut_line
+    colors = []  # 清空已选择的颜色
+    is_draw_cut_line = True  # 重新进入颜色拾取模式
+    print("重新进入颜色拾取模式")
 
 
 
@@ -118,7 +124,7 @@ def reselect_colors_callback():
     global colors, is_picking_color
     colors = []  # 清空已选择的颜色
     is_picking_color = True  # 重新进入颜色拾取模式
-    print("重新进入颜色拾取模式")
+    print("重新进入绘制切割对齐线")
 
 
 def create_gui():
@@ -133,6 +139,24 @@ def create_gui():
     main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
     row = 0
+
+    # 色彩容差
+    # 色彩容差
+    ttk.Label(main_frame, text="色彩容差").grid(row=row, column=0, sticky=tk.W)
+    color_tolerance_var = tk.IntVar(value=color_tolerance)
+    color_tolerance_scale = ttk.Scale(main_frame, from_=0, to=50, orient=tk.HORIZONTAL,
+                                      variable=color_tolerance_var, length=200)
+    color_tolerance_scale.grid(row=row, column=1)
+    color_tolerance_scale.bind("<Motion>", update_tolerance_displays)  # 添加这行
+    ttk.Label(main_frame, textvariable=color_tolerance_var).grid(row=row, column=2)
+    row += 1
+
+    # 膨胀尺寸
+    ttk.Label(main_frame, text="膨胀尺寸").grid(row=row, column=0, sticky=tk.W)
+    dilation_size_var = tk.IntVar(value=(dilation_size - 3) // 2)
+    ttk.Scale(main_frame, from_=0, to=7, orient=tk.HORIZONTAL, variable=dilation_size_var, length=200).grid(row=row, column=1)
+    ttk.Label(main_frame, textvariable=dilation_size_var).grid(row=row, column=2)
+    row += 1
 
 
     # 最小面积
@@ -149,15 +173,8 @@ def create_gui():
     ttk.Label(main_frame, textvariable=area_max_var).grid(row=row, column=2)
     row += 1
 
-    # 色彩容差
-    # 色彩容差
-    ttk.Label(main_frame, text="色彩容差").grid(row=row, column=0, sticky=tk.W)
-    color_tolerance_var = tk.IntVar(value=color_tolerance)
-    color_tolerance_scale = ttk.Scale(main_frame, from_=0, to=50, orient=tk.HORIZONTAL,
-                                      variable=color_tolerance_var, length=200)
-    color_tolerance_scale.grid(row=row, column=1)
-    color_tolerance_scale.bind("<Motion>", update_tolerance_displays)  # 添加这行
-    ttk.Label(main_frame, textvariable=color_tolerance_var).grid(row=row, column=2)
+    # 水平分割线
+    ttk.Separator(main_frame, orient='horizontal').grid(row=row, column=0, columnspan=3, sticky='ew', pady=10)
     row += 1
 
     # 坐标容差
@@ -167,31 +184,26 @@ def create_gui():
     ttk.Label(main_frame, textvariable=coord_threshold_var).grid(row=row, column=2)
     row += 1
 
-    # 膨胀尺寸
-    ttk.Label(main_frame, text="膨胀尺寸").grid(row=row, column=0, sticky=tk.W)
-    dilation_size_var = tk.IntVar(value=(dilation_size - 3) // 2)
-    ttk.Scale(main_frame, from_=0, to=7, orient=tk.HORIZONTAL, variable=dilation_size_var, length=200).grid(row=row, column=1)
-    ttk.Label(main_frame, textvariable=dilation_size_var).grid(row=row, column=2)
-    row += 1
 
 
 
 
     # 开启Mask遮罩
-    ttk.Label(main_frame, text="ROI范围").grid(row=row, column=0, sticky=tk.W)
-    dist_offset_var = tk.IntVar(value=dist_offset)
-    ttk.Scale(main_frame, from_=dist_offset, to=dist_offset*10, orient=tk.HORIZONTAL, variable=dist_offset_var, length=200).grid(row=row, column=1)
-    ttk.Label(main_frame, textvariable=dist_offset_var).grid(row=row, column=2)
-    row +=1
+    #ttk.Label(main_frame, text="ROI范围").grid(row=row, column=0, sticky=tk.W)
+    #dist_offset_var = tk.IntVar(value=dist_offset)
+    #ttk.Scale(main_frame, from_=dist_offset, to=dist_offset*10, orient=tk.HORIZONTAL, variable=dist_offset_var, length=200).grid(row=row, column=1)
+    #ttk.Label(main_frame, textvariable=dist_offset_var).grid(row=row, column=2)
+    #row +=1
 
     # 切换X方向
-    use_x_coord_var = tk.IntVar(value=use_x_coord)
-    ttk.Checkbutton(main_frame, text="切换X方向", variable=use_x_coord_var).grid(row=row, column=0, columnspan=3, sticky=tk.W)
-    row += 1
+    #use_x_coord_var = tk.IntVar(value=use_x_coord)
+    #ttk.Checkbutton(main_frame, text="切换X方向", variable=use_x_coord_var).grid(row=row, column=0, columnspan=3, sticky=tk.W)
+    #row += 1
 
     # 按钮
     ttk.Button(main_frame, text="刷新", command=refresh_parameters).grid(row=row, column=0, pady=10)
     ttk.Button(main_frame, text="重新拾取颜色", command=reselect_colors_callback).grid(row=row, column=1, pady=10)
+    #ttk.Button(main_frame, text = "标定切割位置",command =recut_line_callback).grid(row = row,column =2,pady=10)
     row += 1
 
     # 显示颜色的色块
@@ -310,7 +322,7 @@ def update_mask_roi(h, w):
 
     print("Set Boundary ", boundary)
 
-def draw_roi_boundaries(frame, boundary, use_x_coord=True, color=(0, 255, 0), thickness=2):
+def draw_roi_boundaries(frame, boundary, use_x_coord=True, color=(0, 255, 255), thickness=2):
     result = frame.copy()
     height, width = frame.shape[:2]
     v1_min, v1_max, v2_min, v2_max = boundary
@@ -330,6 +342,9 @@ def draw_roi_boundaries(frame, boundary, use_x_coord=True, color=(0, 255, 0), th
         cv2.line(result, (v2_min, 0), (v2_min, height), color, thickness)
         cv2.line(result, (v2_max, 0), (v2_max, height), color, thickness)
     return result
+
+
+
 
 def draw_histogram(history, frame):
     """在视频帧上绘制颜色区域计数的历史记录直方图"""
@@ -424,7 +439,7 @@ def dist_group(group):
 
 def main():
     """主函数，处理视频并应用颜色过滤和标记"""
-    global frame, zoom_img, avg_color_img, colors, avg_color, is_picking_color, click_count ,mask_roi ,boundary
+    global frame, zoom_img, avg_color_img, colors, avg_color, is_picking_color, click_count ,mask_roi ,boundary,is_draw_cut_line
 
 
     # 启动 Tkinter GUI 线程
@@ -439,11 +454,39 @@ def main():
         return
 
     while True:
+
+        if is_draw_cut_line:
+            frame = camera_utils.get_frame(camera)
+
+            is_draw_cut_line = False
+
+            cv2.namedWindow('Cut Line')
+            cv2.setMouseCallback('Cut Line', draw_cut_line(frame))
+
+
+            print("请在当前帧上绘制切割对齐线，按Enter键结束选择")
+
+
+            while True:
+
+                cv2.imshow('Cut Line', frame)
+                key = cv2.waitKey(1) & 0xFF
+                if key == 13:  # Enter key
+                    break
+
+
+            print(f"切割点坐标: {cut_points}")
+
+            cv2.destroyWindow('Cut Line')
+
+
         if is_picking_color:
             # ret, frame = video.read()
 
 
+
             frame = camera_utils.get_frame(camera)
+
 
             if 0 == 1:
                 print("无法读取视频或视频读取完毕")
@@ -456,6 +499,8 @@ def main():
             cv2.setMouseCallback('Pick Color', zoom_effect)
 
             print("请在当前帧上选择颜色点，按Enter键结束选择")
+
+
 
             while True:
                 display_img = np.hstack((zoom_img, avg_color_img))
@@ -596,10 +641,10 @@ def main():
         # cv2.imshow('Filtered Frame', filtered_frame)
         print("boundary",boundary)
         frame = draw_roi_boundaries(frame_org,boundary,use_x_coord)
-
+        frame = cv2.line(frame,cut_points[0],cut_points[1],(255,0,0),thickness=1)
         # 创建并显示并排视图
         combined_frame = create_side_by_side_display(frame, filtered_frame, 'Original and Filtered Video',
-                                                     scale_factor=0.5)
+                                                     scale_factor=0.4)
 
         if combined_frame is None:
             print("Failed to create side-by-side display")

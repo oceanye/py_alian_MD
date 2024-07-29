@@ -1,6 +1,10 @@
 from MvCameraControl_class import *
 import cv2
 import numpy as np
+import threading
+import random
+import time
+import inspect
 
 
 def open_camera():
@@ -71,3 +75,4 @@ def get_frame(camera):
 
 
     return image
+

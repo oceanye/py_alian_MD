@@ -3,6 +3,7 @@ import numpy as np
 import tkinter as tk
 import threading
 
+
 # 全局变量
 colors = []
 zoom_factor = 4

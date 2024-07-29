@@ -83,31 +83,35 @@ def create_gui():
     root = tk.Tk()
     root.title("参数调整")
 
-    tk.Label(root, text="Area Min").pack()
+    tk.Label(root, text="最小面积").pack()
     area_min_var = tk.IntVar(value=area_min)
     tk.Scale(root, from_=0, to=500, orient=tk.HORIZONTAL, variable=area_min_var).pack()
 
-    tk.Label(root, text="Area Max").pack()
+    tk.Label(root, text="最大面积").pack()
     area_max_var = tk.IntVar(value=area_max)
     tk.Scale(root, from_=0, to=500, orient=tk.HORIZONTAL, variable=area_max_var).pack()
 
-    tk.Label(root, text="Color Tolerance").pack()
+    tk.Label(root, text="色彩容差").pack()
     color_tolerance_var = tk.IntVar(value=color_tolerance)
     tk.Scale(root, from_=0, to=50, orient=tk.HORIZONTAL, variable=color_tolerance_var).pack()
 
-    tk.Label(root, text="Coord Threshold").pack()
+    tk.Label(root, text="坐标容差").pack()
     coord_threshold_var = tk.IntVar(value=coord_threshold)
     tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, variable=coord_threshold_var).pack()
 
-    tk.Label(root, text="Dilation Size").pack()
+    tk.Label(root, text="膨胀尺寸").pack()
     dilation_size_var = tk.IntVar(value=(dilation_size - 3) // 2)
-    tk.Scale(root, from_=0, to=3, orient=tk.HORIZONTAL, variable=dilation_size_var).pack()
+    tk.Scale(root, from_=0, to=7, orient=tk.HORIZONTAL, variable=dilation_size_var).pack()
 
     use_x_coord_var = tk.IntVar(value=use_x_coord)
-    tk.Checkbutton(root, text="Use X Coord", variable=use_x_coord_var).pack()
+    tk.Checkbutton(root, text="切换X方向", variable=use_x_coord_var).pack()
 
     tk.Button(root, text="刷新", command=refresh_parameters).pack()
     tk.Button(root, text="重新拾取颜色", command=reselect_colors_callback).pack()
+
+
+    
+
 
     root.mainloop()
 
@@ -355,7 +359,7 @@ def main():
 
         # 创建并显示并排视图
         combined_frame = create_side_by_side_display(frame, filtered_frame, 'Original and Filtered Video',
-                                                     scale_factor=0.7)
+                                                     scale_factor=0.5)
 
         if combined_frame is None:
             print("Failed to create side-by-side display")

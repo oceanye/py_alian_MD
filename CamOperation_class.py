@@ -10,6 +10,7 @@ import inspect
 import ctypes
 import random
 from ctypes import *
+import cv2
 
 sys.path.append("../MvImport")
 
@@ -139,8 +140,7 @@ class CameraOperation:
 
             # ch:选择设备并创建句柄 | en:Select device and create handle
             nConnectionNum = int(self.n_connect_num)
-            stDeviceList = cast(self.st_device_list.pDeviceInfo[int(nConnectionNum)],
-                                POINTER(MV_CC_DEVICE_INFO)).contents
+            stDeviceList = cast(self.st_device_list.pDeviceInfo[int(nConnectionNum)],POINTER(MV_CC_DEVICE_INFO)).contents
             self.obj_cam = MvCamera()
             ret = self.obj_cam.MV_CC_CreateHandle(stDeviceList)
             if ret != 0:
@@ -345,6 +345,8 @@ class CameraOperation:
             stDisplayParam.pData = self.buf_save_image
             stDisplayParam.nDataLen = self.st_frame_info.nFrameLen
             self.obj_cam.MV_CC_DisplayOneFrame(stDisplayParam)
+
+            cv2.imshow("test",ret)
 
             # 是否退出
             if self.b_exit:
