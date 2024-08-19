@@ -54,15 +54,8 @@ extended_end =(0,0)
 
 motor_connect = False
 
-dist_history = []
-#min_distance = 0
-
-
-
 def zoom_effect(event, x, y, flags, param):
     """鼠标事件的回调函数，用于显示放大效果和选择颜色"""
-    # 调整zoom_effect 显示比例，基于 size_factor
-
     global colors, frame, zoom_img, avg_color_img, click_count, first_click_pos, second_click_pos, picker_dist
 
     if event == cv2.EVENT_MOUSEMOVE:
@@ -78,7 +71,6 @@ def zoom_effect(event, x, y, flags, param):
         zoomed = cv2.resize(zoom_area, (zoom_size, zoom_size), interpolation=cv2.INTER_LINEAR)
 
         cv2.rectangle(zoom_img, (x - zoom_size // 2, y - zoom_size // 2),
-                      (x + zoom_size // 2, y + zoom_size // 2), (0, 255, 0), 4)
         zoom_img[y - zoom_size // 2:y + zoom_size // 2, x - zoom_size // 2:x + zoom_size // 2] = zoomed
 
     elif event == cv2.EVENT_LBUTTONDOWN:
@@ -361,16 +353,12 @@ def draw_roi_boundaries(frame, boundary, use_x_coord=True, color=(0, 255, 255), 
 
 
 
-def draw_histogram2(history, frame):
     """在视频帧上绘制颜色区域计数的历史记录直方图"""
-    hist_height = 200
-    hist_width = 600
     hist = np.zeros((hist_height, hist_width, 3), dtype=np.uint8)
 
     if len(history) > hist_width:
         history = history[-hist_width:]
 
-    max_val = max(abs(history)) if history else 1
 
     # 添加这个检查
     if max_val == 0:
@@ -384,71 +372,15 @@ def draw_histogram2(history, frame):
     cv2.rectangle(hist, (0, 0), (hist_width - 1, hist_height - 1), (255, 255, 255), 1)
 
     # 在直方图上添加标签
-    cv2.putText(hist, "Distance History", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2)
 
     # 计算直方图在帧中的位置
     x_offset = 100  # frame.shape[1] - hist_width - 10
-    y_offset = 850
 
     # 使用 addWeighted 来叠加直方图到原始帧上
     roi = frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width]
     dst = cv2.addWeighted(roi, 1, hist, 0.7, 0)
     frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width] = dst
 
-def draw_histogram(history, frame):
-    """在视频帧上绘制颜色区域计数的历史记录直方图，支持正负值，根据实际最大最小值调整比例"""
-    hist_height = 400
-    hist_width = 600
-    hist = np.zeros((hist_height, hist_width, 3), dtype=np.uint8)
-
-    if len(history) > hist_width:
-        history = history[-hist_width:]
-
-    if not history:
-        return frame
-
-    min_val = min(history)
-    max_val = max(history)
-    value_range = max(abs(max_val), abs(min_val))
-
-    if value_range < 1e-6:  # 避免除以接近零的值
-        value_range = 1
-
-    zero_line = hist_height // 2
-
-    for i, val in enumerate(history):
-        normalized_val = val / value_range
-        height = int(zero_line * normalized_val)
-        if val >= 0:
-            cv2.line(hist, (i, zero_line), (i, zero_line - height), (0, 255, 0), 1)
-        else:
-            cv2.line(hist, (i, zero_line), (i, zero_line - height), (0, 0, 255), 1)
-
-    # 添加背景和边框
-    cv2.rectangle(hist, (0, 0), (hist_width - 1, hist_height - 1), (255, 255, 255), 1)
-
-    # 绘制零线
-    cv2.line(hist, (0, zero_line), (hist_width, zero_line), (255, 255, 255), 1)
-
-    # 在直方图上添加标签
-    cv2.putText(hist, "Distance History", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
-    cv2.putText(hist, f"Max: {max_val:.2f}", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-    cv2.putText(hist, f"Min: {min_val:.2f}", (10, hist_height - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-
-    # 添加刻度
-    cv2.putText(hist, f"{value_range:.2f}", (hist_width - 50, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-    cv2.putText(hist, f"{-value_range:.2f}", (hist_width - 50, hist_height - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-
-    # 计算直方图在帧中的位置
-    x_offset = 100
-    y_offset = frame.shape[0] - hist_height - 50
-
-    # 使用 addWeighted 来叠加直方图到原始帧上
-    roi = frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width]
-    dst = cv2.addWeighted(roi, 1, hist, 0.7, 0)
-    frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width] = dst
-
-    return frame
 def create_side_by_side_display(frame1, frame2, window_name='Side by Side Display', scale_factor=0.5):
     # 检查输入帧是否为空
     if frame1 is None or frame2 is None:
@@ -594,7 +526,6 @@ def nearest_group_movement(groups, cut_start_point, cut_end_point):
         return distance
 
     nearest_group = None
-    min_distance = 9999
 
 
     if len(groups)>0:
@@ -624,7 +555,6 @@ def main():
     global frame, zoom_img, avg_color_img, colors, avg_color, is_picking_color, click_count ,mask_roi ,boundary,is_draw_cut_line
     global cut_start_point,cut_end_point
     global motor_connect,motor_control
-    global dist_history
 
     # 启动 Tkinter GUI 线程
     gui_thread = threading.Thread(target=create_gui, daemon=True)
@@ -661,14 +591,11 @@ def main():
 
             cut_start_point=(0,0)
             cut_end_point=(0,0)
-            cv2.namedWindow('Cut Line', cv2.WINDOW_KEEPRATIO)
             cv2.setMouseCallback('Cut Line', draw_cut_line)
 
 
             print("请在当前帧上绘制切割对齐线，按Enter键结束选择")
 
-            #cv2.namedWindow('Cut Line', cv2.WINDOW_AUTOSIZE)
-            #cv2.resizeWindow('Cut Line',800,600)
             while True:
 
                 cv2.imshow('Cut Line', frame)
@@ -705,13 +632,10 @@ def main():
             zoom_img = frame.copy()
             avg_color_img = np.zeros((frame.shape[0], avg_color_block_size, 3), dtype=np.uint8)
 
-            cv2.namedWindow('Pick Color',cv2.WINDOW_KEEPRATIO) #cv2.WINDOW_NORMAL |
             cv2.setMouseCallback('Pick Color', zoom_effect)
 
             print("请在当前帧上选择颜色点，按Enter键结束选择")
 
-            print("zoom_img", zoom_img.shape)
-            print("avg_color", avg_color_img.shape)
 
             while True:
                 display_img = np.hstack((zoom_img, avg_color_img))
@@ -787,8 +711,6 @@ def main():
             color_regions_history = color_regions_history[-300:]
 
 
-
-
         centers = []
         for contour in contours:
             area = cv2.contourArea(contour)
@@ -837,25 +759,6 @@ def main():
         direction ,nearest_group, min_distance = nearest_group_movement(groups_line, cut_start_point, cut_end_point)
 
         #print("nearest point",nearest_group)
-
-        # 记录尺寸变化
-
-        #dist_history = []  # 添加这行
-
-
-        dist_history.append(min_distance)
-
-        # 限制 history 的大小以防止内存问题
-        if len(dist_history) > 300:  # 假设我们只保留最近300帧的历史
-            dist_history = dist_history[-300:]
-
-
-
-        # 在视频帧上绘制历史记录直方图
-        draw_histogram(dist_history, frame_org)
-
-
-
 
         #绘制最近的匹配线
         cv2.line(frame_org,nearest_group[0],nearest_group[1],(255,0,255),5)
