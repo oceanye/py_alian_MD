@@ -1,0 +1,14 @@
+2024-09-05 14:24:47,064 - cutter_log - INFO - current_meter/aim_meter: 180.0/3000[1000]
+2024-09-05 14:24:57,814 - cutter_log - INFO - Start:(0, 1561),End:(2448, 1623)
+2024-09-05 14:25:17,499 - cutter_log - INFO - Motor,4,0
+2024-09-05 14:25:17,499 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:180.0/3000
+2024-09-05 14:25:17,846 - cutter_log - INFO - current_meter/aim_meter: 180.0/3000[1000]
+2024-09-05 14:25:19,484 - cutter_log - INFO - Motor,4,0
+2024-09-05 14:25:19,485 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:180.0/3000
+2024-09-05 14:25:19,812 - cutter_log - INFO - current_meter/aim_meter: 180.0/3000[1000]
+2024-09-05 14:25:22,466 - cutter_log - INFO - Motor,4,0
+2024-09-05 14:25:22,466 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:180.0/3000
+2024-09-05 14:25:22,794 - cutter_log - INFO - current_meter/aim_meter: 180.0/3000[1000]
+2024-09-05 14:25:24,909 - cutter_log - INFO - Motor,4,0
+2024-09-05 14:25:24,909 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:180.0/3000
+2024-09-05 14:25:25,237 - cutter_log - INFO - current_meter/aim_meter: 180.0/3000[1000]

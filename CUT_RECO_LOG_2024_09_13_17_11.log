@@ -1,0 +1,1357 @@
+2024-09-13 17:11:47,727 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:11:58,949 - cutter_log - INFO - Start:(0, 1727),End:(2448, 1758)
+2024-09-13 17:12:25,843 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:25,843 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:26,187 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:26,389 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:26,389 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:26,712 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:26,913 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:26,913 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:27,217 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:27,418 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:27,418 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:27,736 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:27,938 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:27,938 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:28,255 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:28,458 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:28,458 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:28,769 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:28,971 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:28,971 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:29,285 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:29,487 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:29,487 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:29,706 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:29,908 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:29,908 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:30,217 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:30,418 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:30,418 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:30,737 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:30,939 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:30,939 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:31,251 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:31,453 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:31,453 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:31,783 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:31,985 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:31,985 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:32,303 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:32,504 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:32,504 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:32,819 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:33,020 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:33,020 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:33,334 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:33,536 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:33,536 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:33,838 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:34,041 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:34,041 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:34,359 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:34,561 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:34,561 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:34,864 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:35,066 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:35,066 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:35,382 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:35,584 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:35,584 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:35,898 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:36,100 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:36,100 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:36,415 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:36,617 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:36,617 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:36,931 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:37,133 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:37,133 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:37,447 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:37,649 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:37,649 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:37,968 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:38,170 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:38,170 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:38,485 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:38,686 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:38,686 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:39,000 - cutter_log - INFO - current_meter/aim_meter: 0.0/3000[500]
+2024-09-13 17:12:39,202 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:39,202 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:0.0/3000
+2024-09-13 17:12:39,516 - cutter_log - INFO - current_meter/aim_meter: 10.0/3000[500]
+2024-09-13 17:12:39,718 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:39,718 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:10.0/3000
+2024-09-13 17:12:40,035 - cutter_log - INFO - current_meter/aim_meter: 60.0/3000[500]
+2024-09-13 17:12:40,238 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:40,238 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:60.0/3000
+2024-09-13 17:12:40,552 - cutter_log - INFO - current_meter/aim_meter: 170.0/3000[500]
+2024-09-13 17:12:40,754 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:40,754 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:170.0/3000
+2024-09-13 17:12:41,057 - cutter_log - INFO - current_meter/aim_meter: 270.0/3000[500]
+2024-09-13 17:12:41,259 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:41,259 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:270.0/3000
+2024-09-13 17:12:41,574 - cutter_log - INFO - current_meter/aim_meter: 380.0/3000[500]
+2024-09-13 17:12:41,775 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:41,775 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:380.0/3000
+2024-09-13 17:12:42,078 - cutter_log - INFO - current_meter/aim_meter: 540.0/3000[500]
+2024-09-13 17:12:42,279 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:42,279 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:540.0/3000
+2024-09-13 17:12:42,598 - cutter_log - INFO - current_meter/aim_meter: 720.0/3000[500]
+2024-09-13 17:12:42,799 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:42,800 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:720.0/3000
+2024-09-13 17:12:43,114 - cutter_log - INFO - current_meter/aim_meter: 820.0/3000[500]
+2024-09-13 17:12:43,316 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:43,316 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:820.0/3000
+2024-09-13 17:12:43,632 - cutter_log - INFO - current_meter/aim_meter: 940.0/3000[500]
+2024-09-13 17:12:43,834 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:43,834 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:940.0/3000
+2024-09-13 17:12:44,135 - cutter_log - INFO - current_meter/aim_meter: 1050.0/3000[500]
+2024-09-13 17:12:44,337 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:44,337 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1050.0/3000
+2024-09-13 17:12:44,654 - cutter_log - INFO - current_meter/aim_meter: 1170.0/3000[500]
+2024-09-13 17:12:44,856 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:44,856 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1170.0/3000
+2024-09-13 17:12:45,172 - cutter_log - INFO - current_meter/aim_meter: 1330.0/3000[500]
+2024-09-13 17:12:45,375 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:45,375 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1330.0/3000
+2024-09-13 17:12:45,684 - cutter_log - INFO - current_meter/aim_meter: 1420.0/3000[500]
+2024-09-13 17:12:45,888 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:45,888 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1420.0/3000
+2024-09-13 17:12:46,204 - cutter_log - INFO - current_meter/aim_meter: 1420.0/3000[500]
+2024-09-13 17:12:46,405 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:46,405 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1420.0/3000
+2024-09-13 17:12:46,703 - cutter_log - INFO - current_meter/aim_meter: 1430.0/3000[500]
+2024-09-13 17:12:46,904 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:46,904 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1430.0/3000
+2024-09-13 17:12:47,205 - cutter_log - INFO - current_meter/aim_meter: 1500.0/3000[500]
+2024-09-13 17:12:47,407 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:47,407 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1500.0/3000
+2024-09-13 17:12:47,726 - cutter_log - INFO - current_meter/aim_meter: 1630.0/3000[500]
+2024-09-13 17:12:47,928 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:47,928 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1630.0/3000
+2024-09-13 17:12:48,246 - cutter_log - INFO - current_meter/aim_meter: 1680.0/3000[500]
+2024-09-13 17:12:48,447 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:48,447 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1680.0/3000
+2024-09-13 17:12:48,768 - cutter_log - INFO - current_meter/aim_meter: 1860.0/3000[500]
+2024-09-13 17:12:48,969 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:48,969 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:1860.0/3000
+2024-09-13 17:12:49,287 - cutter_log - INFO - current_meter/aim_meter: 2150.0/3000[500]
+2024-09-13 17:12:49,489 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:49,489 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2150.0/3000
+2024-09-13 17:12:49,805 - cutter_log - INFO - current_meter/aim_meter: 2330.0/3000[500]
+2024-09-13 17:12:50,007 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:12:50,007 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2330.0/3000
+2024-09-13 17:12:50,320 - cutter_log - INFO - current_meter/aim_meter: 2500.0/3000[500]
+2024-09-13 17:12:50,349 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:50,350 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:50,350 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2500.0/3000/[500]
+2024-09-13 17:12:50,916 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:50,935 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:50,936 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:50,936 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:51,364 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:51,386 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:51,387 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:51,387 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:51,922 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:51,941 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:51,941 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:51,942 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:52,471 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:52,491 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:52,492 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:52,492 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:53,035 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:53,054 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:53,055 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:53,055 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:53,585 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:53,605 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:53,605 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:53,606 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:54,132 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:54,151 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:54,152 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:54,152 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:54,682 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:54,702 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:54,703 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:54,703 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:55,144 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:55,167 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:55,167 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:55,168 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:55,617 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:55,642 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:55,644 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:55,644 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:56,174 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:56,194 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:56,195 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:56,195 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:56,721 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:56,743 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:56,743 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:56,744 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:57,174 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:57,195 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:57,196 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:57,196 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:57,714 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:57,733 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:57,734 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:57,734 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:58,264 - cutter_log - INFO - current_meter/aim_meter: 2580.0/3000[500]
+2024-09-13 17:12:58,284 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:58,285 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:58,285 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2580.0/3000/[500]
+2024-09-13 17:12:58,817 - cutter_log - INFO - current_meter/aim_meter: 2590.0/3000[500]
+2024-09-13 17:12:58,837 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:58,838 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:58,838 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2590.0/3000/[500]
+2024-09-13 17:12:59,363 - cutter_log - INFO - current_meter/aim_meter: 2590.0/3000[500]
+2024-09-13 17:12:59,383 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:59,384 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:59,384 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2590.0/3000/[500]
+2024-09-13 17:12:59,913 - cutter_log - INFO - current_meter/aim_meter: 2600.0/3000[500]
+2024-09-13 17:12:59,932 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:12:59,933 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:12:59,933 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2600.0/3000/[500]
+2024-09-13 17:13:00,476 - cutter_log - INFO - current_meter/aim_meter: 2630.0/3000[500]
+2024-09-13 17:13:00,496 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:00,497 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:00,497 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2630.0/3000/[500]
+2024-09-13 17:13:01,025 - cutter_log - INFO - current_meter/aim_meter: 2660.0/3000[500]
+2024-09-13 17:13:01,045 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:01,046 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:01,046 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2660.0/3000/[500]
+2024-09-13 17:13:01,572 - cutter_log - INFO - current_meter/aim_meter: 2640.0/3000[500]
+2024-09-13 17:13:01,592 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:01,593 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:01,593 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2640.0/3000/[500]
+2024-09-13 17:13:02,117 - cutter_log - INFO - current_meter/aim_meter: 2540.0/3000[500]
+2024-09-13 17:13:02,137 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:02,138 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:02,138 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2540.0/3000/[500]
+2024-09-13 17:13:02,665 - cutter_log - INFO - current_meter/aim_meter: 2450.0/3000[500]
+2024-09-13 17:13:02,867 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:02,872 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2450.0/3000
+2024-09-13 17:13:03,210 - cutter_log - INFO - current_meter/aim_meter: 2420.0/3000[500]
+2024-09-13 17:13:03,413 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:03,413 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2420.0/3000
+2024-09-13 17:13:03,724 - cutter_log - INFO - current_meter/aim_meter: 2420.0/3000[500]
+2024-09-13 17:13:03,926 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:03,926 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2420.0/3000
+2024-09-13 17:13:04,239 - cutter_log - INFO - current_meter/aim_meter: 2440.0/3000[500]
+2024-09-13 17:13:04,440 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:04,441 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2440.0/3000
+2024-09-13 17:13:04,758 - cutter_log - INFO - current_meter/aim_meter: 2500.0/3000[500]
+2024-09-13 17:13:04,785 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:04,786 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:04,786 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2500.0/3000/[500]
+2024-09-13 17:13:05,335 - cutter_log - INFO - current_meter/aim_meter: 2610.0/3000[500]
+2024-09-13 17:13:05,354 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:05,355 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:05,355 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2610.0/3000/[500]
+2024-09-13 17:13:05,879 - cutter_log - INFO - current_meter/aim_meter: 2610.0/3000[500]
+2024-09-13 17:13:05,898 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:05,899 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:05,899 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2610.0/3000/[500]
+2024-09-13 17:13:06,428 - cutter_log - INFO - current_meter/aim_meter: 2610.0/3000[500]
+2024-09-13 17:13:06,450 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:06,451 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:06,451 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2610.0/3000/[500]
+2024-09-13 17:13:06,980 - cutter_log - INFO - current_meter/aim_meter: 2610.0/3000[500]
+2024-09-13 17:13:07,000 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:07,001 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:07,001 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2610.0/3000/[500]
+2024-09-13 17:13:07,549 - cutter_log - INFO - current_meter/aim_meter: 2610.0/3000[500]
+2024-09-13 17:13:07,569 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:07,570 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:07,570 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2610.0/3000/[500]
+2024-09-13 17:13:08,115 - cutter_log - INFO - current_meter/aim_meter: 2610.0/3000[500]
+2024-09-13 17:13:08,135 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:08,136 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:08,136 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2610.0/3000/[500]
+2024-09-13 17:13:08,666 - cutter_log - INFO - current_meter/aim_meter: 2540.0/3000[500]
+2024-09-13 17:13:08,685 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:08,686 - cutter_log - INFO - Dist: 231.0
+2024-09-13 17:13:08,686 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2540.0/3000/[500]
+2024-09-13 17:13:09,216 - cutter_log - INFO - current_meter/aim_meter: 2480.0/3000[500]
+2024-09-13 17:13:09,417 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:09,428 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2480.0/3000
+2024-09-13 17:13:09,764 - cutter_log - INFO - current_meter/aim_meter: 2390.0/3000[500]
+2024-09-13 17:13:09,966 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:09,966 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2390.0/3000
+2024-09-13 17:13:10,278 - cutter_log - INFO - current_meter/aim_meter: 2380.0/3000[500]
+2024-09-13 17:13:10,480 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:10,480 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2380.0/3000
+2024-09-13 17:13:10,794 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:10,996 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:10,996 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:11,194 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:11,395 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:11,395 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:11,703 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:11,904 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:11,904 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:12,216 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:12,419 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:12,419 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:12,733 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:12,935 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:12,936 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:13,246 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:13,447 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:13,447 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:13,764 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:13,965 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:13,965 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:14,280 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:14,482 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:14,482 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:14,797 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:14,998 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:14,998 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:15,312 - cutter_log - INFO - current_meter/aim_meter: 2360.0/3000[500]
+2024-09-13 17:13:15,514 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:15,514 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2360.0/3000
+2024-09-13 17:13:15,814 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:16,016 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:16,016 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:16,228 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:16,430 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:16,430 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:16,735 - cutter_log - INFO - current_meter/aim_meter: 2380.0/3000[500]
+2024-09-13 17:13:16,937 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:16,937 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2380.0/3000
+2024-09-13 17:13:17,235 - cutter_log - INFO - current_meter/aim_meter: 2350.0/3000[500]
+2024-09-13 17:13:17,437 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:17,437 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2350.0/3000
+2024-09-13 17:13:17,751 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:17,952 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:17,952 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:18,264 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:18,467 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:18,467 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:18,681 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:18,882 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:18,882 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:19,188 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:19,390 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:19,390 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:19,709 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:19,910 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:19,910 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:20,227 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:20,428 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:20,428 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:20,743 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:20,945 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:20,945 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:21,257 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:21,458 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:21,458 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:21,774 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:21,976 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:21,976 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:22,289 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:22,491 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:22,491 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:22,794 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:22,996 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:22,996 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:23,307 - cutter_log - INFO - current_meter/aim_meter: 2340.0/3000[500]
+2024-09-13 17:13:23,508 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:23,508 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2340.0/3000
+2024-09-13 17:13:23,826 - cutter_log - INFO - current_meter/aim_meter: 2350.0/3000[500]
+2024-09-13 17:13:24,027 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:24,027 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2350.0/3000
+2024-09-13 17:13:24,340 - cutter_log - INFO - current_meter/aim_meter: 2370.0/3000[500]
+2024-09-13 17:13:24,542 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:24,542 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2370.0/3000
+2024-09-13 17:13:24,856 - cutter_log - INFO - current_meter/aim_meter: 2390.0/3000[500]
+2024-09-13 17:13:25,058 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:25,058 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2390.0/3000
+2024-09-13 17:13:25,372 - cutter_log - INFO - current_meter/aim_meter: 2390.0/3000[500]
+2024-09-13 17:13:25,574 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:25,574 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2390.0/3000
+2024-09-13 17:13:25,874 - cutter_log - INFO - current_meter/aim_meter: 2390.0/3000[500]
+2024-09-13 17:13:26,075 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:26,075 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2390.0/3000
+2024-09-13 17:13:26,374 - cutter_log - INFO - current_meter/aim_meter: 2360.0/3000[500]
+2024-09-13 17:13:26,576 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:26,576 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2360.0/3000
+2024-09-13 17:13:26,905 - cutter_log - INFO - current_meter/aim_meter: 2330.0/3000[500]
+2024-09-13 17:13:27,106 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:27,106 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2330.0/3000
+2024-09-13 17:13:27,411 - cutter_log - INFO - current_meter/aim_meter: 2320.0/3000[500]
+2024-09-13 17:13:27,612 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:27,612 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2320.0/3000
+2024-09-13 17:13:27,917 - cutter_log - INFO - current_meter/aim_meter: 2310.0/3000[500]
+2024-09-13 17:13:28,118 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:28,118 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2310.0/3000
+2024-09-13 17:13:28,434 - cutter_log - INFO - current_meter/aim_meter: 2280.0/3000[500]
+2024-09-13 17:13:28,635 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:28,635 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2280.0/3000
+2024-09-13 17:13:28,935 - cutter_log - INFO - current_meter/aim_meter: 2240.0/3000[500]
+2024-09-13 17:13:29,136 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:29,136 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2240.0/3000
+2024-09-13 17:13:29,436 - cutter_log - INFO - current_meter/aim_meter: 2310.0/3000[500]
+2024-09-13 17:13:29,638 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:29,638 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2310.0/3000
+2024-09-13 17:13:29,952 - cutter_log - INFO - current_meter/aim_meter: 2350.0/3000[500]
+2024-09-13 17:13:30,154 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:30,154 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2350.0/3000
+2024-09-13 17:13:30,456 - cutter_log - INFO - current_meter/aim_meter: 2430.0/3000[500]
+2024-09-13 17:13:30,658 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:30,658 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2430.0/3000
+2024-09-13 17:13:30,974 - cutter_log - INFO - current_meter/aim_meter: 2460.0/3000[500]
+2024-09-13 17:13:31,175 - cutter_log - INFO - Motor,4,175
+2024-09-13 17:13:31,175 - cutter_log - INFO - Control Type: Meter Control;Current /Aim Meter:2460.0/3000
+2024-09-13 17:13:31,473 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:31,505 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:31,506 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:31,506 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:32,069 - cutter_log - INFO - current_meter/aim_meter: 2540.0/3000[500]
+2024-09-13 17:13:32,089 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:32,090 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:32,090 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2540.0/3000/[500]
+2024-09-13 17:13:32,618 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:32,638 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:32,638 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:32,638 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:33,171 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:33,190 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:33,191 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:33,191 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:33,705 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:33,725 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:33,726 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:33,726 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:34,255 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:34,273 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:34,274 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:34,274 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:34,804 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:34,824 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:34,825 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:34,825 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:35,356 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:35,376 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:35,377 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:35,377 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:35,804 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:35,827 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:35,828 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:35,828 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:36,358 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:36,378 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:36,378 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:36,379 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:36,904 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:36,923 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:36,924 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:36,925 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:37,449 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:37,471 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:37,472 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:37,472 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:37,895 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:37,915 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:37,916 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:37,916 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:38,451 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:38,470 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:38,471 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:38,471 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:39,000 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:39,020 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:39,021 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:39,021 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:39,545 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:39,564 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:39,565 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:39,565 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:40,103 - cutter_log - INFO - current_meter/aim_meter: 2540.0/3000[500]
+2024-09-13 17:13:40,124 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:40,125 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:40,125 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2540.0/3000/[500]
+2024-09-13 17:13:40,655 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:40,675 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:40,676 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:40,676 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:41,206 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:41,227 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:41,228 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:41,228 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:41,770 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:41,791 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:41,792 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:41,792 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:42,316 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:42,335 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:42,336 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:42,336 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:42,864 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:42,883 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:42,884 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:42,884 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:43,426 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:43,445 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:43,446 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:43,447 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:43,987 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:44,007 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:44,008 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:44,008 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:44,537 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:44,556 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:44,557 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:44,557 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:45,096 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:45,116 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:45,117 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:45,117 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:45,647 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:45,666 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:45,667 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:45,667 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:46,209 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:46,228 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:46,228 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:46,228 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:46,659 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:46,683 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:46,684 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:46,684 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:47,215 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:47,236 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:47,237 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:47,237 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:47,782 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:47,802 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:47,803 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:47,803 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:48,334 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:48,353 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:48,353 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:48,353 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:48,883 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:48,902 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:48,904 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:48,904 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:49,449 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:49,468 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:49,469 - cutter_log - INFO - Dist: 230.5
+2024-09-13 17:13:49,469 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:50,014 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:50,033 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:50,034 - cutter_log - INFO - Dist: 229.0
+2024-09-13 17:13:50,034 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:50,579 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:50,598 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:50,599 - cutter_log - INFO - Dist: 229.0
+2024-09-13 17:13:50,599 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:51,029 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:51,053 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:51,056 - cutter_log - INFO - Dist: 219.1
+2024-09-13 17:13:51,056 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:51,597 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:51,618 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:51,619 - cutter_log - INFO - Dist: 203.2
+2024-09-13 17:13:51,619 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:52,142 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:52,162 - cutter_log - INFO - Color Regions: 12
+2024-09-13 17:13:52,163 - cutter_log - INFO - Dist: 190.7
+2024-09-13 17:13:52,163 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:52,705 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:52,724 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:52,725 - cutter_log - INFO - Dist: 172.8
+2024-09-13 17:13:52,725 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:53,253 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:53,273 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:13:53,274 - cutter_log - INFO - Dist: 158.7
+2024-09-13 17:13:53,274 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:53,807 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:53,826 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:53,827 - cutter_log - INFO - Dist: 148.7
+2024-09-13 17:13:53,828 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:54,359 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:54,378 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:54,379 - cutter_log - INFO - Dist: 126.8
+2024-09-13 17:13:54,379 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:54,907 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:54,927 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:13:54,928 - cutter_log - INFO - Dist: 106.3
+2024-09-13 17:13:54,928 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:55,456 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:55,475 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:13:55,476 - cutter_log - INFO - Dist: 84.8
+2024-09-13 17:13:55,476 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:56,007 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:56,026 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:13:56,027 - cutter_log - INFO - Dist: 263.8
+2024-09-13 17:13:56,027 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:56,554 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:56,574 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:56,575 - cutter_log - INFO - Dist: 58.3
+2024-09-13 17:13:56,575 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:57,104 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:57,123 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:13:57,124 - cutter_log - INFO - Dist: 249.8
+2024-09-13 17:13:57,124 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:57,650 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:57,670 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:57,671 - cutter_log - INFO - Dist: 247.8
+2024-09-13 17:13:57,671 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:58,214 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:58,233 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:13:58,234 - cutter_log - INFO - Dist: 240.3
+2024-09-13 17:13:58,234 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:58,678 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:58,701 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:58,702 - cutter_log - INFO - Dist: 232.8
+2024-09-13 17:13:58,702 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:59,247 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:59,265 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:59,266 - cutter_log - INFO - Dist: 231.8
+2024-09-13 17:13:59,266 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:13:59,798 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:13:59,817 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:13:59,818 - cutter_log - INFO - Dist: 36.3
+2024-09-13 17:13:59,818 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:00,356 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:00,376 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:00,377 - cutter_log - INFO - Dist: 35.8
+2024-09-13 17:14:00,377 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:00,902 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:00,921 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:00,922 - cutter_log - INFO - Dist: 34.8
+2024-09-13 17:14:00,922 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:01,465 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:01,484 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:01,485 - cutter_log - INFO - Dist: 30.3
+2024-09-13 17:14:01,485 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:02,030 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:02,049 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:02,050 - cutter_log - INFO - Dist: 24.8
+2024-09-13 17:14:02,050 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:02,580 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:02,600 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:02,601 - cutter_log - INFO - Dist: 19.8
+2024-09-13 17:14:02,601 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:03,128 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:03,146 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:03,148 - cutter_log - INFO - Dist: 11.8
+2024-09-13 17:14:03,148 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:03,573 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:03,593 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:03,594 - cutter_log - INFO - Dist: 8.3
+2024-09-13 17:14:03,595 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:04,127 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:04,147 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:04,148 - cutter_log - INFO - Dist: 5.3
+2024-09-13 17:14:04,148 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:04,677 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:04,698 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:04,698 - cutter_log - INFO - Dist: 3.3
+2024-09-13 17:14:04,699 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:05,222 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:05,242 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:05,243 - cutter_log - INFO - Dist: 1.3
+2024-09-13 17:14:05,243 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:05,674 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:05,698 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:05,699 - cutter_log - INFO - Dist: 1.2
+2024-09-13 17:14:05,699 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:06,229 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:06,249 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:06,249 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:06,250 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:06,791 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:06,810 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:06,811 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:06,811 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:07,339 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:07,359 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:07,360 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:07,360 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:07,906 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:07,926 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:07,927 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:07,927 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:08,358 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:08,379 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:08,380 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:08,380 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:08,897 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:08,916 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:08,917 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:08,917 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:09,450 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:09,470 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:09,471 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:09,471 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:09,997 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:10,016 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:10,017 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:10,017 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:10,545 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:10,564 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:10,565 - cutter_log - INFO - Dist: 197.7
+2024-09-13 17:14:10,565 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:11,093 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:11,115 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:11,116 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:11,116 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:11,659 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:11,679 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:11,680 - cutter_log - INFO - Dist: 3.2
+2024-09-13 17:14:11,680 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:12,209 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:12,228 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:12,229 - cutter_log - INFO - Dist: 4.8
+2024-09-13 17:14:12,229 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:12,774 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:12,794 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:12,795 - cutter_log - INFO - Dist: -6.2
+2024-09-13 17:14:12,795 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:13,336 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:13,356 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:13,357 - cutter_log - INFO - Dist: -10.6
+2024-09-13 17:14:13,357 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:13,883 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:13,902 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:13,902 - cutter_log - INFO - Dist: -12.1
+2024-09-13 17:14:13,903 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:14,433 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:14,453 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:14,454 - cutter_log - INFO - Dist: -14.5
+2024-09-13 17:14:14,454 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:14,982 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:15,001 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:15,002 - cutter_log - INFO - Dist: -15.0
+2024-09-13 17:14:15,002 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:15,544 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:15,563 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:15,564 - cutter_log - INFO - Dist: -11.1
+2024-09-13 17:14:15,564 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:16,093 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:16,112 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:16,113 - cutter_log - INFO - Dist: -11.6
+2024-09-13 17:14:16,113 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:16,658 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:16,677 - cutter_log - INFO - Color Regions: 6
+2024-09-13 17:14:16,678 - cutter_log - INFO - Dist: -19.0
+2024-09-13 17:14:16,678 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:17,204 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:17,223 - cutter_log - INFO - Color Regions: 5
+2024-09-13 17:14:17,224 - cutter_log - INFO - Dist: -28.8
+2024-09-13 17:14:17,224 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:17,760 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:17,780 - cutter_log - INFO - Color Regions: 5
+2024-09-13 17:14:17,781 - cutter_log - INFO - Dist: -36.9
+2024-09-13 17:14:17,781 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:18,304 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:18,325 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:18,326 - cutter_log - INFO - Dist: -36.1
+2024-09-13 17:14:18,326 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:18,854 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:18,875 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:18,876 - cutter_log - INFO - Dist: -35.6
+2024-09-13 17:14:18,876 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:19,415 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:19,434 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:19,435 - cutter_log - INFO - Dist: -42.6
+2024-09-13 17:14:19,435 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:19,964 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:19,984 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:19,985 - cutter_log - INFO - Dist: -56.1
+2024-09-13 17:14:19,985 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:20,511 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:20,530 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:20,531 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:20,531 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:20,977 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:20,998 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:20,999 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:20,999 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:21,450 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:21,473 - cutter_log - INFO - Color Regions: 13
+2024-09-13 17:14:21,474 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:21,474 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:22,007 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:22,028 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:22,028 - cutter_log - INFO - Dist: -56.6
+2024-09-13 17:14:22,028 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:22,558 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:22,578 - cutter_log - INFO - Color Regions: 17
+2024-09-13 17:14:22,579 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:22,579 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:23,105 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:23,126 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:23,126 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:23,127 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:23,656 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:23,677 - cutter_log - INFO - Color Regions: 17
+2024-09-13 17:14:23,679 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:23,679 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:24,218 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:24,236 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:24,237 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:24,237 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:24,764 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:24,784 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:24,785 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:24,785 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:25,311 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:25,331 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:25,332 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:25,332 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:25,870 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:25,891 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:25,892 - cutter_log - INFO - Dist: -57.1
+2024-09-13 17:14:25,892 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:26,420 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:26,440 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:26,441 - cutter_log - INFO - Dist: -61.6
+2024-09-13 17:14:26,441 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:26,970 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:26,991 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:26,992 - cutter_log - INFO - Dist: -57.6
+2024-09-13 17:14:26,992 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:27,537 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:27,557 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:27,559 - cutter_log - INFO - Dist: -47.2
+2024-09-13 17:14:27,559 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:28,085 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:28,104 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:28,105 - cutter_log - INFO - Dist: -44.2
+2024-09-13 17:14:28,105 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:28,634 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:28,653 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:28,654 - cutter_log - INFO - Dist: -42.2
+2024-09-13 17:14:28,654 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:29,186 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:29,206 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:29,207 - cutter_log - INFO - Dist: -40.7
+2024-09-13 17:14:29,207 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:29,753 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:29,774 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:29,775 - cutter_log - INFO - Dist: -41.2
+2024-09-13 17:14:29,775 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:30,305 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:30,325 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:30,326 - cutter_log - INFO - Dist: -40.8
+2024-09-13 17:14:30,326 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:30,853 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:30,872 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:30,873 - cutter_log - INFO - Dist: -39.3
+2024-09-13 17:14:30,873 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:31,401 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:31,421 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:31,422 - cutter_log - INFO - Dist: -35.8
+2024-09-13 17:14:31,422 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:31,953 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:31,972 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:31,973 - cutter_log - INFO - Dist: -30.8
+2024-09-13 17:14:31,973 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:32,504 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:32,524 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:32,525 - cutter_log - INFO - Dist: -25.8
+2024-09-13 17:14:32,525 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:33,052 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:33,071 - cutter_log - INFO - Color Regions: 12
+2024-09-13 17:14:33,071 - cutter_log - INFO - Dist: 173.8
+2024-09-13 17:14:33,072 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:33,600 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:33,620 - cutter_log - INFO - Color Regions: 13
+2024-09-13 17:14:33,621 - cutter_log - INFO - Dist: 178.8
+2024-09-13 17:14:33,621 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:34,146 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:34,166 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:34,167 - cutter_log - INFO - Dist: -14.8
+2024-09-13 17:14:34,167 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:34,696 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:34,717 - cutter_log - INFO - Color Regions: 12
+2024-09-13 17:14:34,718 - cutter_log - INFO - Dist: 179.8
+2024-09-13 17:14:34,718 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:35,242 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:35,263 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:35,263 - cutter_log - INFO - Dist: -12.8
+2024-09-13 17:14:35,264 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:35,793 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:35,814 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:35,815 - cutter_log - INFO - Dist: -10.3
+2024-09-13 17:14:35,815 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:36,242 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:36,264 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:36,265 - cutter_log - INFO - Dist: -8.3
+2024-09-13 17:14:36,265 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:36,814 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:36,834 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:36,835 - cutter_log - INFO - Dist: -4.8
+2024-09-13 17:14:36,835 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:37,363 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:37,382 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:37,383 - cutter_log - INFO - Dist: -0.3
+2024-09-13 17:14:37,383 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:37,914 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:37,934 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:37,935 - cutter_log - INFO - Dist: 4.7
+2024-09-13 17:14:37,935 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:38,363 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:38,384 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:38,385 - cutter_log - INFO - Dist: 8.2
+2024-09-13 17:14:38,385 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:38,935 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:38,955 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:38,956 - cutter_log - INFO - Dist: 11.7
+2024-09-13 17:14:38,956 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:39,483 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:39,502 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:39,503 - cutter_log - INFO - Dist: 15.2
+2024-09-13 17:14:39,503 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:40,032 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:40,053 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:40,054 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:40,054 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:40,578 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:40,597 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:40,598 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:40,598 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:41,125 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:41,145 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:41,146 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:41,146 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:41,676 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:41,696 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:41,697 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:41,697 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:42,224 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:42,243 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:42,244 - cutter_log - INFO - Dist: 18.3
+2024-09-13 17:14:42,244 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:42,773 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:42,792 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:42,793 - cutter_log - INFO - Dist: 18.3
+2024-09-13 17:14:42,793 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:43,323 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:43,342 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:43,343 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:43,343 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:43,887 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:43,908 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:43,909 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:43,909 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:44,435 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:44,455 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:44,456 - cutter_log - INFO - Dist: 211.9
+2024-09-13 17:14:44,456 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:44,985 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:45,004 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:45,005 - cutter_log - INFO - Dist: 18.3
+2024-09-13 17:14:45,005 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:45,533 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:45,552 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:45,553 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:45,553 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:46,098 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:46,116 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:46,117 - cutter_log - INFO - Dist: 17.8
+2024-09-13 17:14:46,117 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:46,563 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:46,584 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:46,585 - cutter_log - INFO - Dist: 17.3
+2024-09-13 17:14:46,585 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:47,121 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:47,142 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:47,143 - cutter_log - INFO - Dist: 10.2
+2024-09-13 17:14:47,143 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:47,677 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:47,697 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:47,698 - cutter_log - INFO - Dist: -4.8
+2024-09-13 17:14:47,698 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:48,227 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:48,246 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:48,247 - cutter_log - INFO - Dist: -23.3
+2024-09-13 17:14:48,247 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:48,779 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:48,797 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:48,798 - cutter_log - INFO - Dist: -27.3
+2024-09-13 17:14:48,798 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:49,328 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:49,348 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:49,349 - cutter_log - INFO - Dist: -27.3
+2024-09-13 17:14:49,349 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:49,876 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:49,895 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:49,897 - cutter_log - INFO - Dist: -25.8
+2024-09-13 17:14:49,897 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:50,438 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:50,457 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:50,458 - cutter_log - INFO - Dist: -20.3
+2024-09-13 17:14:50,458 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:51,003 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:51,022 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:51,023 - cutter_log - INFO - Dist: -17.8
+2024-09-13 17:14:51,023 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:51,467 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:51,489 - cutter_log - INFO - Color Regions: 12
+2024-09-13 17:14:51,490 - cutter_log - INFO - Dist: -12.8
+2024-09-13 17:14:51,490 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:52,008 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:52,027 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:52,028 - cutter_log - INFO - Dist: -9.3
+2024-09-13 17:14:52,028 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:52,555 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:52,575 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:52,576 - cutter_log - INFO - Dist: -8.8
+2024-09-13 17:14:52,576 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:53,108 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:53,127 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:53,128 - cutter_log - INFO - Dist: -7.3
+2024-09-13 17:14:53,128 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:53,654 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:53,673 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:53,674 - cutter_log - INFO - Dist: -5.3
+2024-09-13 17:14:53,674 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:54,205 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:54,224 - cutter_log - INFO - Color Regions: 12
+2024-09-13 17:14:54,225 - cutter_log - INFO - Dist: -4.3
+2024-09-13 17:14:54,225 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:54,754 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:54,773 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:14:54,774 - cutter_log - INFO - Dist: -2.3
+2024-09-13 17:14:54,774 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:55,298 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:55,317 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:55,318 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:55,318 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:55,848 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:55,868 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:14:55,869 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:55,869 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:56,393 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:56,412 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:56,413 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:56,413 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:56,956 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:56,976 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:56,977 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:56,977 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:57,405 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:57,427 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:57,428 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:57,428 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:57,944 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:57,963 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:57,964 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:57,964 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:58,493 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:58,513 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:14:58,514 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:58,514 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:59,059 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:59,079 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:14:59,080 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:59,080 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:59,506 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:59,528 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:14:59,529 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:14:59,529 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:14:59,978 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:14:59,998 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:00,000 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:15:00,000 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:00,534 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:00,553 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:00,554 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:15:00,554 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:01,098 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:01,117 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:01,119 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:15:01,119 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:01,647 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:01,666 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:01,667 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:15:01,667 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:02,213 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:02,232 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:02,233 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:15:02,233 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:02,757 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:02,776 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:02,777 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:15:02,777 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:03,307 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:03,326 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:03,327 - cutter_log - INFO - Dist: -1.8
+2024-09-13 17:15:03,327 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:03,854 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:03,875 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:03,876 - cutter_log - INFO - Dist: -2.8
+2024-09-13 17:15:03,876 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:04,404 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:04,423 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:04,424 - cutter_log - INFO - Dist: -1.3
+2024-09-13 17:15:04,425 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:04,951 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:04,970 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:04,971 - cutter_log - INFO - Dist: 1.2
+2024-09-13 17:15:04,971 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:05,496 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:05,516 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:05,517 - cutter_log - INFO - Dist: 8.7
+2024-09-13 17:15:05,517 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:06,046 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:06,065 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:15:06,066 - cutter_log - INFO - Dist: 14.2
+2024-09-13 17:15:06,066 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:06,596 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:06,617 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:06,618 - cutter_log - INFO - Dist: 19.7
+2024-09-13 17:15:06,618 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:07,164 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:07,186 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:07,188 - cutter_log - INFO - Dist: 29.2
+2024-09-13 17:15:07,188 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:07,718 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:07,738 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:15:07,739 - cutter_log - INFO - Dist: 37.2
+2024-09-13 17:15:07,740 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:08,269 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:08,288 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:15:08,289 - cutter_log - INFO - Dist: 41.2
+2024-09-13 17:15:08,289 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:08,835 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:08,855 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:08,856 - cutter_log - INFO - Dist: 46.7
+2024-09-13 17:15:08,856 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:09,398 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:09,417 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:15:09,418 - cutter_log - INFO - Dist: 53.2
+2024-09-13 17:15:09,418 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:09,847 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:09,867 - cutter_log - INFO - Color Regions: 11
+2024-09-13 17:15:09,868 - cutter_log - INFO - Dist: 55.2
+2024-09-13 17:15:09,868 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:10,401 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:10,420 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:10,421 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:10,421 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:10,949 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:10,968 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:10,969 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:10,969 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:11,512 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:11,532 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:11,533 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:11,533 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:12,077 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:12,096 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:12,097 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:12,097 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:12,625 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:12,644 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:12,645 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:12,646 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:13,195 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:13,214 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:13,215 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:13,215 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:13,744 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:13,763 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:13,764 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:13,765 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:14,307 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:14,327 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:14,328 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:14,328 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:14,857 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:14,876 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:14,877 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:14,877 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:15,404 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:15,424 - cutter_log - INFO - Color Regions: 9
+2024-09-13 17:15:15,425 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:15,425 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:15,951 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:15,970 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:15,971 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:15,971 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:16,398 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:16,419 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:16,420 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:16,420 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:16,948 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:16,968 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:16,969 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:16,969 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:17,501 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:17,520 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:17,521 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:17,521 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:18,051 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:18,070 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:18,071 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:18,072 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:18,597 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:18,616 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:18,617 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:18,617 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:19,161 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:19,180 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:19,181 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:19,181 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:19,728 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:19,748 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:19,749 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:19,749 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:20,262 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:20,282 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:20,283 - cutter_log - INFO - Dist: 54.7
+2024-09-13 17:15:20,283 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:20,814 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:20,834 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:20,835 - cutter_log - INFO - Dist: 47.6
+2024-09-13 17:15:20,835 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:21,377 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:21,396 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:21,397 - cutter_log - INFO - Dist: 31.5
+2024-09-13 17:15:21,397 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:21,824 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:21,844 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:21,846 - cutter_log - INFO - Dist: 8.9
+2024-09-13 17:15:21,846 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:22,368 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:22,388 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:22,389 - cutter_log - INFO - Dist: 0.9
+2024-09-13 17:15:22,389 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:22,916 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:22,934 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:22,936 - cutter_log - INFO - Dist: -5.6
+2024-09-13 17:15:22,936 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:23,464 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:23,483 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:23,484 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:23,484 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:24,012 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:24,031 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:24,032 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:24,032 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:24,560 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:24,579 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:24,580 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:24,580 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:25,105 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:25,125 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:25,126 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:25,127 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:25,654 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:25,673 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:25,674 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:25,675 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:26,205 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:26,225 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:26,226 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:26,226 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:26,748 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:26,768 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:26,769 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:26,769 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:27,319 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:27,338 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:27,340 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:27,340 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:27,886 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:27,905 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:27,906 - cutter_log - INFO - Dist: -7.2
+2024-09-13 17:15:27,906 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:28,438 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:28,457 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:28,458 - cutter_log - INFO - Dist: -7.2
+2024-09-13 17:15:28,458 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:28,990 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:29,010 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:29,011 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:29,011 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:29,537 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:29,557 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:29,558 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:29,558 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:30,086 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:30,106 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:30,107 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:30,107 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:30,632 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:30,650 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:30,651 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:30,651 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:31,183 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:31,202 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:31,203 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:31,203 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:31,746 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:31,766 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:31,767 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:31,767 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:32,195 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:32,217 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:32,218 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:32,218 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:32,750 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:32,770 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:32,771 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:32,771 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:33,317 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:33,336 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:33,337 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:33,337 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:33,869 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:33,889 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:33,890 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:33,890 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:34,419 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:34,439 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:34,440 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:34,441 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:34,966 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:34,986 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:34,987 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:34,987 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:35,516 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:35,536 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:35,537 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:35,537 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:35,963 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:35,985 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:35,986 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:35,986 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:36,416 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:36,436 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:36,437 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:36,437 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:36,971 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:36,990 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:36,991 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:36,991 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:37,520 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:37,541 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:37,542 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:37,542 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:38,085 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:38,106 - cutter_log - INFO - Color Regions: 10
+2024-09-13 17:15:38,107 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:38,107 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:38,633 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:38,653 - cutter_log - INFO - Color Regions: 8
+2024-09-13 17:15:38,654 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:38,654 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]
+2024-09-13 17:15:39,184 - cutter_log - INFO - current_meter/aim_meter: 2550.0/3000[500]
+2024-09-13 17:15:39,204 - cutter_log - INFO - Color Regions: 7
+2024-09-13 17:15:39,205 - cutter_log - INFO - Dist: -6.7
+2024-09-13 17:15:39,205 - cutter_log - INFO - Control Type: Camera Control Current/Aim:2550.0/3000/[500]

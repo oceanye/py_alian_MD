@@ -12,6 +12,21 @@ class MotorControl:
         self.Pos2_values = [90 for _ in range(16)]
         self.Pos3_values = [180 for _ in range(16)]
 
+        self.Pos1_values[1] =10
+        self.Pos2_values[1]=90
+        self.Pos3_values[1]=150
+
+        self.Pos1_values[3] = 1
+        self.Pos2_values[3]=90
+        self.Pos3_values[3]=170
+
+        self.Pos1_values[4] = 10
+        self.Pos2_values[4]=90
+        self.Pos3_values[4]=170
+        #self.current_positions[4]=175
+
+        
+
     def init_serial(self, port):
         try:
             self.ser = serial.Serial(port, 9600, timeout=1)
@@ -23,7 +38,7 @@ class MotorControl:
 
     def motor_command(self, motor_index, value):
         if not self.ser or not self.ser.is_open:
-            messagebox.showerror("Serial Port Error", "Serial port is not open.")
+            #messagebox.showerror("Serial Port Error", "Serial port is not open.")
             return False
 
         command = f"{motor_index},{int(value)};"

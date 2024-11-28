@@ -1,3 +1,4 @@
+import datetime
 import math
 
 import cv2
@@ -8,6 +9,10 @@ import camera_utils
 from tkinter import ttk
 
 from py_arduino_motor import MotorControl, MotorControlApp, run_gui
+from sd76_utils import SD76Device
+import serial.tools.list_ports
+
+import logging
 
 # 全局变量
 colors = []
@@ -18,12 +23,14 @@ avg_color = None
 is_picking_color = True  # 标识是否在拾取颜色状态
 is_draw_cut_line= True # 表示是否在绘制切割标记线
 
+
 # 新增全局变量
 picker_dist = 0
 avg_color_display = None
 lower_tolerance_display = None
 upper_tolerance_display = None
 picker_dist_label = None
+meter_aim_value =0
 
 avg_color = np.array([0, 0, 0])  # 初始化为黑色
 
@@ -57,7 +64,7 @@ motor_connect = False
 dist_history = []
 #min_distance = 0
 
-
+status_meter_control = True
 
 def zoom_effect(event, x, y, flags, param):
     """鼠标事件的回调函数，用于显示放大效果和选择颜色"""
@@ -117,14 +124,19 @@ def update_avg_color_display():
 def refresh_parameters():
     """刷新参数"""
     global area_min, area_max, color_tolerance, coord_threshold, use_x_coord, dilation_size
+    global meter_aim_value,aim_value_enter
+    global meter_control_value,meter_control_value_enter
 
     area_min = area_min_var.get()
     area_max = area_max_var.get()
     color_tolerance = color_tolerance_var.get()
     coord_threshold = coord_threshold_var.get()
-    use_x_coord = bool(use_x_coord_var.get())
+    #use_x_coord = bool(use_x_coord_var.get())
     dilation_size = 2 * dilation_size_var.get() + 3
-    dist_offset = dist_offset_var.get()
+    #dist_offset = dist_offset_var.get()
+    meter_aim_value = int(aim_value_enter.get())
+    meter_control_value = int(meter_control_value_enter.get())
+
 
 
 def reselect_cut_callback():
@@ -144,7 +156,8 @@ def reselect_colors_callback():
 def create_gui():
     """创建 Tkinter GUI 界面"""
     global area_min_var, area_max_var, color_tolerance_var, coord_threshold_var, use_x_coord_var, dilation_size_var, dist_offset_var
-    global avg_color_display, lower_tolerance_display, upper_tolerance_display, picker_dist_label
+    global meter_control_value ,aim_value_enter, meter_control_value_enter
+    global avg_color_display, lower_tolerance_display, upper_tolerance_display, picker_dist_label,meter_aim_value
 
     root = tk.Tk()
     root.title("参数调整")
@@ -198,6 +211,20 @@ def create_gui():
     ttk.Label(main_frame, textvariable=coord_threshold_var).grid(row=row, column=2)
     row += 1
 
+    ttk.Label(main_frame, text="目标位置 mm").grid(row=row,column =0,sticky=tk.W)
+    aim_value_enter = tk.Entry(main_frame,width = 10)
+    aim_value_enter.grid(row=row,column =1)
+    aim_value_enter.insert(0,"3000")
+    meter_aim_value = int(aim_value_enter.get())
+
+
+
+    ttk.Label(main_frame, text="摄像头控制范围（mm）").grid(row=row,column =2,sticky=tk.W)
+    meter_control_value_enter = tk.Entry(main_frame,width = 10)
+    meter_control_value_enter.grid(row=row,column =3)
+    meter_control_value_enter.insert(0,"1000")
+    meter_control_value = int(meter_control_value_enter.get())
+    row +=1
 
 
 
@@ -239,14 +266,14 @@ def create_gui():
 
 
     # 显示picker_dist
-    ttk.Label(main_frame, text="Picker Distance:").grid(row=row, column=0, sticky=tk.W)
+    ttk.Label(main_frame, text="控制线距离(像素点):").grid(row=row, column=0, sticky=tk.W)
     picker_dist_label = ttk.Label(main_frame, text="0")
     picker_dist_label.grid(row=row, column=1, sticky=tk.W)
     row += 1
 
     # 更新picker_dist显示
     def update_picker_dist():
-        picker_dist_label.config(text=f"{picker_dist:.2f}")
+        picker_dist_label.config(text=f"{picker_dist:.0f}")
         root.after(100, update_picker_dist)
 
     update_picker_dist()
@@ -361,7 +388,7 @@ def draw_roi_boundaries(frame, boundary, use_x_coord=True, color=(0, 255, 255), 
 
 
 
-def draw_histogram(history, frame):
+def draw_histogram2(history, frame):
     """在视频帧上绘制颜色区域计数的历史记录直方图，支持正负值，根据实际最大最小值调整比例"""
     hist_height = 400
     hist_width = 600
@@ -396,8 +423,61 @@ def draw_histogram(history, frame):
 
     # 在直方图上添加标签
     cv2.putText(hist, "Distance History", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
-    cv2.putText(hist, f"Max: {max_val:.2f}", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-    cv2.putText(hist, f"Min: {min_val:.2f}", (10, hist_height - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+    cv2.putText(hist, f"Max: {max_val:.2f}", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+    cv2.putText(hist, f"Min: {min_val:.2f}", (10, hist_height - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+
+    # 计算直方图在帧中的位置
+    x_offset = 100
+    y_offset = frame.shape[0] - hist_height - 50
+
+    # 使用 addWeighted 来叠加直方图到原始帧上
+    roi = frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width]
+    dst = cv2.addWeighted(roi, 1, hist, 0.7, 0)
+    frame[y_offset:y_offset + hist_height, x_offset:x_offset + hist_width] = dst
+
+    return frame
+
+
+def draw_histogram(history, frame):
+    """在视频帧上绘制颜色区域计数的历史记录直方图，支持正负值，零线固定在中间，根据max,min调整比例"""
+    hist_height = 400
+    hist_width = 600
+    hist = np.zeros((hist_height, hist_width, 3), dtype=np.uint8)
+
+    if len(history) > hist_width:
+        history = history[-hist_width:]
+
+    if not history:
+        return frame
+
+    min_val = min(history)
+    max_val = max(history)
+    abs_max = max(abs(min_val), abs(max_val))
+
+    if abs_max < 1e-6:  # 避免除以接近零的值
+        abs_max = 1
+
+    zero_line = hist_height // 2  # 零线固定在中间
+    scale = (hist_height // 2 - 10) / abs_max  # 计算比例尺
+
+    # 绘制历史数据
+    for i, val in enumerate(history):
+        bar_height = int(val * scale)
+        if val >= 0:
+            cv2.line(hist, (i, zero_line), (i, zero_line - bar_height), (0, 255, 0), 1)
+        else:
+            cv2.line(hist, (i, zero_line), (i, zero_line - bar_height), (0, 255, 0), 1)
+
+    # 添加背景和边框
+    cv2.rectangle(hist, (0, 0), (hist_width - 1, hist_height - 1), (255, 255, 255), 1)
+
+    # 绘制零线
+    cv2.line(hist, (0, zero_line), (hist_width, zero_line), (255, 255, 255), 1)
+
+    # 在直方图上添加标签
+    cv2.putText(hist, "Distance History", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+    cv2.putText(hist, f"Max: {max_val:.2f}", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+    cv2.putText(hist, f"Min: {min_val:.2f}", (10, hist_height - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
     # 计算直方图在帧中的位置
     x_offset = 100
@@ -469,6 +549,7 @@ def dist_group(group):
 def draw_cut_line(event,x,y,flags, param):
     global is_draw_cut_line
     global cut_start_point,cut_end_point
+    global logger
 
     is_draw_cut_line = False
     #click_count = 0
@@ -532,6 +613,7 @@ def get_extended_line(frame, cut_start_point, cut_end_point):
 
     extended_start, extended_end = valid_points[0], valid_points[-1]
 
+    logger.info(f"Start:{extended_start},End:{extended_end}")
     return extended_start, extended_end
 
 
@@ -578,13 +660,40 @@ def nearest_group_movement(groups, cut_start_point, cut_end_point):
 
     return direction,nearest_group, round(min_distance,1)
 
+def find_com_port_by_description(target_description):
+    # 获取所有可用的 COM 端口
+    ports = serial.tools.list_ports.comports()
 
+    # 遍历所有端口，查找描述中包含目标字符串的端口
+    for port in ports:
+        if target_description in port.description:
+            # 如果找到包含目标字符串的端口，返回该端口名
+            return port.device
+
+    # 如果没有找到，返回 None
+    return None
 def main():
     """主函数，处理视频并应用颜色过滤和标记"""
     global frame, zoom_img, avg_color_img, colors, avg_color, is_picking_color, click_count ,mask_roi ,boundary,is_draw_cut_line
     global cut_start_point,cut_end_point
     global motor_connect,motor_control
     global dist_history
+    global meter_aim_value,meter_control_value
+    global logger
+
+
+
+    #logger_time = 年月日小时分
+    logger_time = datetime.datetime.now().strftime('%Y_%m_%d_%H_%M')
+    # 配置日志记录器
+    logging.basicConfig(
+        filename='CUT_RECO_LOG_'+logger_time+'.log',  # 日志文件名
+        filemode='w',  # 写入模式：'w' 表示覆盖，'a' 表示追加
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        level=logging.DEBUG  # 设置日志级别
+    )
+
+    logger = logging.getLogger('cutter_log')
 
     # 启动 Tkinter GUI 线程
     gui_thread = threading.Thread(target=create_gui, daemon=True)
@@ -592,9 +701,22 @@ def main():
 
     camera = camera_utils.open_camera()
 
+    # 查找包含 "CH340" 的端口
+    motor_com_id = find_com_port_by_description("CH340")
+
+    print("Mototid",motor_com_id)
+    # 查找包含 "CP210x" 的端口
+    meter_com_id = find_com_port_by_description("CP210x")
+    # 创建设备实例
+    device = SD76Device(port=meter_com_id)  # 根据实际情况调整端口
+
+
+
     try:
+
+
         motor_control = MotorControl()
-        motor_control.init_serial("COM3")  # 请替换为正确的串口名称
+        motor_control.init_serial(motor_com_id)  # 请替换为正确的串口名称
         motor_connect = True
     except Exception as e:
         print("motor not connect with COM3")
@@ -608,11 +730,19 @@ def main():
         print("无法打开摄像头")
         return
 
+
+
     while True:
 
         frame = camera_utils.get_frame(camera)
         frame_org = frame.copy()
 
+        meter_current_value = device.read_upper_value() * 1000
+        logger.info(f"current_meter/aim_meter: {meter_current_value}/{meter_aim_value}[{meter_control_value}]")
+        if abs(meter_current_value - meter_aim_value) > meter_control_value:
+            status_meter_control = True
+        else:
+            status_meter_control=False
 
         if is_draw_cut_line:
             #frame = camera_utils.get_frame(camera)
@@ -649,18 +779,9 @@ def main():
         cv2.line(frame_org,extended_start,extended_end ,(0,0,255),2)
 
 
-
+        #cv2.imshow('test',frame_org)
         if is_picking_color:
-            # ret, frame = video.read()
 
-
-
-            #frame = camera_utils.get_frame(camera)
-
-
-            if 0 == 1:
-                print("无法读取视频或视频读取完毕")
-                return
 
             zoom_img = frame.copy()
             avg_color_img = np.zeros((frame.shape[0], avg_color_block_size, 3), dtype=np.uint8)
@@ -694,6 +815,46 @@ def main():
         # if not ret:
         #    video.set(cv2.CAP_PROP_POS_FRAMES, 0)  # 重置视频到开始
         #    continue
+
+        if status_meter_control == True:
+            #计米轮控制电机
+            meter_dist = meter_current_value-meter_aim_value
+            if motor_connect == True:
+                #motor_control.move_to_position(1, 0)# 快慢
+                #logger.info("Motor,1,0")
+                if meter_dist > 0:
+                    motor_control.move_to_position(4, 0)  # 移动第一个电机到90度位置
+                    logger.info("Motor,4,0")
+                elif meter_dist < 0:
+                    motor_control.move_to_position(4, 175)
+                    logger.info("Motor,4,175")
+
+
+
+            try:
+                {cv2.destroyWindow('Original and Filtered Video')}
+            except:
+                pass
+
+            logger.info(f"Control Type: Meter Control;Current /Aim Meter:{meter_current_value}/{meter_aim_value}")
+            cv2.putText(frame_org, f"Control Type: Meter Control", (10, 200),
+                        cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 255, 0), 2)
+            cv2.putText(frame_org,f"Current /Aim Meter:{meter_current_value}/{meter_aim_value}",(10,400),
+                        cv2.FONT_HERSHEY_SIMPLEX,3,(0,255,9),2)
+            cv2.namedWindow('Meter Control', cv2.WINDOW_KEEPRATIO)
+
+            frame_org_resize = cv2.resize(frame_org,(0, 0), fx=0.5, fy=0.5)
+            cv2.imshow('Meter Control',frame_org)
+            cv2.waitKey(1)
+
+            continue
+        else:
+            try:
+                    cv2.destroyWindow('Meter Control')
+
+            except:
+                pass
+
 
 
         # 使用 bitwise_and 操作
@@ -787,9 +948,10 @@ def main():
                 for point in group:
                     cv2.circle(frame_org, point, 30, (0, 255, 0), 2)
 
+        logger.info(f"Color Regions: {color_regions_count}")
         # 显示识别到的颜色区域个数
         cv2.putText(frame_org, f"Color Regions: {color_regions_count}", (10, 100),
-                    cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 255, 0), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 2)
 
         # 计算最近的一组点
 
@@ -820,20 +982,34 @@ def main():
         #绘制最近的匹配线
         cv2.line(frame_org,nearest_group[0],nearest_group[1],(255,0,255),5)
 
+
+        #Logger
+        logger.info(f"Dist: {min_distance}")
+        logger.info(f"Control Type: Camera Control Current/Aim:{meter_current_value}/{meter_aim_value}/[{meter_control_value}]")
+
         #匹配线的距离
-        cv2.putText(frame_org, f"Dist: {min_distance}", (nearest_group[1][0]+300,nearest_group[1][1]+100),
-                    cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 255, 0), 2)
+        if min_distance != 0:
+            cv2.putText(frame_org, f"Dist: {min_distance}", (nearest_group[1][0]+300,nearest_group[1][1]+100),
+                    cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 2)
         #识别点移动方向
         cv2.putText(frame_org, f"Direction: {direction}", (10, 200),
-                    cv2.FONT_HERSHEY_SIMPLEX, 3, (0, 255, 0), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 255, 0), 2)
 
+        cv2.putText(frame_org,f"Meter Control:{status_meter_control} Current/Aim:{meter_current_value}/{meter_aim_value}/[{meter_control_value}]",(0,300),
+                    cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),2)
         if motor_connect ==True:
-            if min_distance > 5:
-                motor_control.move_to_position(4, 180)  # 移动第一个电机到90度位置
-            elif min_distance< -5:
+            #镜头控制电机
+            #motor_control.move_to_position(1, 175)  # 快慢
+            #logger.info("Motor,1,175")
+            if min_distance > 10:
+                motor_control.move_to_position(4, 175)  # 移动第一个电机到90度位置
+                logger.info("Motor,4,175")
+            elif min_distance< -10:
                 motor_control.move_to_position(4,0)
+                logger.info("Motor,4,0")
             else:
                 motor_control.move_to_position(4,90)
+                logger.info("Motor,4,90")
         # 在视频帧上绘制历史记录直方图
         #draw_histogram(color_regions_history, frame)
 
@@ -858,7 +1034,7 @@ def main():
         # cv2.imshow('Filtered Frame', filtered_frame)
         print("boundary",boundary)
         frame = draw_roi_boundaries(frame_org,boundary,use_x_coord)
-        frame = cv2.line(frame,cut_points[0],cut_points[1],(255,0,0),thickness=1)
+        frame = cv2.line(frame,cut_points[0],cut_points[1],(255,0,0),thickness=2)
         # 创建并显示并排视图
         combined_frame = create_side_by_side_display(frame, filtered_frame, 'Original and Filtered Video',
                                                      scale_factor=0.4)
@@ -876,7 +1052,7 @@ def main():
 
 
 if __name__ == "__main__":
-    #video_path = 'video(3).mp4'  # 可以更改为其他视频路径
+    #video_patcurrent_meterh = 'video(3).mp4'  # 可以更改为其他视频路径
 
 
     main()
